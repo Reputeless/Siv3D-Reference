@@ -1,6 +1,6 @@
 ﻿# AnimatedGIFWriter
 
-一連の `Image` から GIF アニメーションファイルを作成できます。
+一連の `Image` から GIF アニメーションファイルを作成します。
 
 ## AnimatedGIFWriter の使用例
 
