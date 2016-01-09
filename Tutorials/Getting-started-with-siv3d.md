@@ -13,4 +13,4 @@ void Main()
 }
 ```
 
-[次の章へ進む](Draw-shape.md)
+[次の章へ進む →](Draw-shape.md)
