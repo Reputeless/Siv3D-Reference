@@ -1,6 +1,6 @@
 ﻿# AnimatedGIFWriter
 
-`AnimatedGIFWriter` を使うと、一連の `Image` から GIF アニメーションファイルを作成できます。
+一連の `Image` から GIF アニメーションファイルを作成できます。
 
 ### AnimatedGIFWriter の使用例
 
@@ -27,6 +27,6 @@ void Main()
 	}
 }
 ```
-作成される GIF アニメーションファイル  
+作成される GIF アニメーション 
   
 ![alt text](resource/AnimatedGIFWriter/animation.gif "animation.gif")
