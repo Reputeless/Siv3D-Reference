@@ -1,5 +1,4 @@
-﻿<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
-# 1. Siv3D の基本
+﻿# 1. Siv3D の基本
 
 ### 最小限のプログラム
 
@@ -13,3 +12,5 @@ void Main()
 
 }
 ```
+
+[次の章へ進む](Draw-shape.md)
