@@ -15,4 +15,4 @@ void Main()
 }
 ```
 
-[← 前の章へ戻る](Getting-started-with-siv3d.md)　|　[次の章へ進む →](Getting-started-with-siv3d.md)
+[← 前の章へ戻る](Getting-started-with-siv3d.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Draw-texture.md)
