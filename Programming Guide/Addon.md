@@ -1,7 +1,7 @@
 ﻿# Addon
 
 ### アドオンとは
-`IAddon` を継承したクラスは、アドオンとして Siv3D エンジンに登録できます。  
+`IAddon` を継承したクラスは、Siv3D エンジンにアドオンとして登録できます。  
 アドオンとして登録されたクラスは `System::Update()` のたびに自動的に `update()` が呼ばれるようになり、ユーザが更新用の関数を呼ぶ手間を省けます。
 
 `LeapMotion Addon` はアドオンの仕組みを利用して実装されています。
@@ -57,7 +57,11 @@ public:
 
 void Main()
 {
+	Println(Addon::IsRegistered<FPS_On_Title>());
+
 	Addon::Register<FPS_On_Title>();
+
+	Println(Addon::IsRegistered<FPS_On_Title>());
 
 	while (System::Update())
 	{
@@ -69,6 +73,15 @@ void Main()
 		if (Input::MouseR.clicked)
 		{
 			Window::SetTitle(L"My Game");
+		}
+
+		if (Input::KeyU.clicked)
+		{
+			Addon::Unregister<FPS_On_Title>();
+
+			Window::SetTitle(L"My Work");
+
+			Println(Addon::IsRegistered<FPS_On_Title>());
 		}
 	}
 }
