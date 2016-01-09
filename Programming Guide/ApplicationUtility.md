@@ -2,7 +2,7 @@
 
 テキストや値を、画面に手軽に表示するためのユーティリティです。
 
-### Print
+## Print
 
 ```cpp
 # include <Siv3D.hpp>
@@ -27,25 +27,25 @@ void Main()
 }
 ```
 
-### Println
+## Println
 
 ```cpp
 
 ```
 
-### ClearPrint
+## ClearPrint
 
 ```cpp
 
 ```
 
-### WaitKey
+## WaitKey
 
 ```cpp
 
 ```
 
-### PutText
+## PutText
 
 ```cpp
 

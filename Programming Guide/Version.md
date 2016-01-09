@@ -2,7 +2,7 @@
 
 使用している Siv3D ライブラリのバージョンが定義されています。
 
-### ライブラリのバージョンを調べる  
+## ライブラリのバージョンを調べる  
 マクロ `Siv3DVersion` は Siv3D ライブラリのバージョン文字列を、マクロ `Siv3DVersionID` は数値形式のバージョン ID を示します。  
 バージョン ID は新しいリリースほど大きい数になります。
 
@@ -19,7 +19,7 @@ void Main()
 }
 ```
 
-### Siv3DVersion と Siv3DVersionID の対応表
+## Siv3DVersion と Siv3DVersionID の対応表
 
 | ライブラリのバージョン | Siv3DVersion | Siv3DVersionID |
 |:-------------|:-------------|:-----:|

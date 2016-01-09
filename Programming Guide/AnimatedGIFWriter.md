@@ -2,7 +2,7 @@
 
 一連の `Image` から GIF アニメーションファイルを作成できます。
 
-### AnimatedGIFWriter の使用例
+## AnimatedGIFWriter の使用例
 
 ```cpp
 # include <Siv3D.hpp>
@@ -31,7 +31,7 @@ void Main()
   
 ![animation.gif](resource/AnimatedGIFWriter/animation.gif "animation.gif")
 
-### ディザリングの有無
+## ディザリングの有無
 
 ディザリングを有効にすると、処理時間が長くなるのと引き換えに、色の階調をなめらかにできます。
 
