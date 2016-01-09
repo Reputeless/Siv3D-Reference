@@ -59,4 +59,4 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[- 目次 -](Index.md)　|　[次の章へ進む →](Draw-shape.md)
+||　[- 目次 -](Index.md)　|　[次の章へ進む →](Draw-shape.md)

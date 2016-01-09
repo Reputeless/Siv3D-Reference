@@ -1,4 +1,4 @@
-﻿# XXX. XXXXX
+﻿# 20. アセット管理
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)
+[← 前の章へ戻る](GUI.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Image.md)

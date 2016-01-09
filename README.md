@@ -32,7 +32,7 @@
 [28. パーティクル](Tutorials/Particle.md)  
 [29. スクリーンショット](Tutorials/Screen-capture.md)  
 [30. シーン管理](Tutorials/SceneManager.md)  
-[31. アプリケーションの配布](Tutorials/Release.md)  
+[31. 作ったアプリケーションの配布](Tutorials/Release.md)  
 
 ## プログラミングガイド
 

@@ -1,4 +1,4 @@
-﻿# XXX. XXXXX
+﻿# 19. GUI
 
 ## XXXXX
 
@@ -6,4 +6,5 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)
+[← 前の章へ戻る]([18. バイナリファイル](Tutorials/Binary.md)  
+.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Asset.md)

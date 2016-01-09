@@ -1,4 +1,4 @@
-﻿# XXX. XXXXX
+﻿# 13. ダイアログ
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)
+[← 前の章へ戻る](Random.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Dragdrop.md)

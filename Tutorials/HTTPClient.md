@@ -1,4 +1,4 @@
-﻿# XXX. XXXXX
+﻿# 26. ファイルダウンロード
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)
+[← 前の章へ戻る](HSV.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Draw-3d.md)

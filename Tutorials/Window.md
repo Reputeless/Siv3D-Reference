@@ -1,4 +1,4 @@
-﻿# XXX. XXXXX
+﻿# 10. ウィンドウと背景
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](XXXXXXXXXXXXXXXXXXXXXXXXXXXX.md)
+[← 前の章へ戻る](Midi.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Geometry2D.md)
