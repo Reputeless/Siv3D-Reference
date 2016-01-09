@@ -62,7 +62,7 @@ void Main()
 	}
 }
 ```
-作成される GIF アニメーション 
+作成される GIF アニメーション（**左:** ディザリング有効　**右:** ディザリング無効） 
   
 ![animation-dither.gif](resource/AnimatedGIFWriter/animation-dither.gif "animation-dither.gif")
 ![animation-nodither.gif](resource/AnimatedGIFWriter/animation-nodither.gif "animation-nodither.gif")
