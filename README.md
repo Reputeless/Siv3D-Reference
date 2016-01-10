@@ -1,4 +1,4 @@
-﻿# Siv3D Reference
+﻿# Siv3D リファレンス
 
 ## 入門チュートリアル
 
