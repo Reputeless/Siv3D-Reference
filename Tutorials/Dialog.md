@@ -1,7 +1,7 @@
 ﻿# 13. ダイアログ
 
 ## XXXXX
-
+![XXXXXXXXXXXXx](resource/YYYYYYYYY/xxxxxxxxxxxxxxxxxx.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXX
 ```

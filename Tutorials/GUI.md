@@ -1,7 +1,7 @@
 ﻿# 19. GUI
 
 ## XXXXX
-
+![XXXXXXXXXXXXx](resource/YYYYYYYYY/xxxxxxxxxxxxxxxxxx.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXX
 ```

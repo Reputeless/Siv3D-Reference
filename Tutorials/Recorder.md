@@ -1,7 +1,7 @@
 ﻿# 23. マイク入力
 
 ## XXXXX
-
+![XXXXXXXXXXXXx](resource/YYYYYYYYY/xxxxxxxxxxxxxxxxxx.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXX
 ```

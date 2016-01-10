@@ -1,7 +1,7 @@
 ﻿# 18. バイナリファイル
 
 ## XXXXX
-
+![XXXXXXXXXXXXx](resource/YYYYYYYYY/xxxxxxxxxxxxxxxxxx.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXX
 ```

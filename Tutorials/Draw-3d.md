@@ -1,7 +1,7 @@
 ﻿# 27. 3D 描画
 
 ## XXXXX
-
+![XXXXXXXXXXXXx](resource/YYYYYYYYY/xxxxxxxxxxxxxxxxxx.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXX
 ```
