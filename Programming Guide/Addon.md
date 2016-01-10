@@ -45,7 +45,7 @@ public:
 			m_baseTitle = currentTitle;
 		}
 
-		m_previousTitle = Format(L"{} ({}FPS)"_fmt, m_baseTitle, Profiler::FPS());
+		m_previousTitle = Format(L"{} ({}fps)"_fmt, m_baseTitle, Profiler::FPS());
 
 		Window::SetTitle(m_previousTitle);
 
