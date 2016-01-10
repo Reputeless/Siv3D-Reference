@@ -12,5 +12,5 @@
 - (Windows 7 の場合) [最新の DirectX ランタイム](https://www.microsoft.com/ja-jp/download/details.aspx?id=35&)
 
 ## Visual Studio 2015
-Siv3D でアプリケーションを開発するには、C++ による Windows デスクトップアプリケーションの開発をサポートする **Visual Studio 2015 Update 1** 以降が必要です。[マイクロソフトの Web サイト](https://www.visualstudio.com/ja-jp/downloads/download-visual-studio-vs) から無償の Visual Studio Community 2015 または Visual Studio Express 2015 for Desktop をダウンロードしてください。  
+Siv3D でアプリケーションを開発するには、C++ による Windows デスクトップアプリケーションの開発をサポートする **Visual Studio 2015 Update 1** 以降が必要です。[マイクロソフトの Web サイト](https://www.visualstudio.com/ja-jp/downloads/download-visual-studio-vs) から、無償の Visual Studio Community 2015 または Visual Studio Express 2015 for Desktop をダウンロードしてください。  
 ※ Visual Studio 2013 はサポートしていません。
