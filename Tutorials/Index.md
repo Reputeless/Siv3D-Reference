@@ -2,7 +2,7 @@
 
 [1. Siv3D の基本](Getting-started-with-siv3d.md)  
 [2. 図形を描く](Draw-shape.md)  
-[3. 画像を描く](Draw-texture.md)  
+[3. テクスチャを描く](Draw-texture.md)  
 [4. テキストを描く](Draw-font.md)  
 [5. 文字列と数値の変換](Formatting.md)  
 [6. キーボード入力](Key.md)  
