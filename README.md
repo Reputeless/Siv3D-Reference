@@ -1,7 +1,14 @@
-﻿# Siv3D リファレンス
+﻿# Siv3D リファレンス | January 2016
+
+## Siv3D January 2016 の新機能
+リリースノート  
+新機能サンプル  
+
+## インストール方法
+動作環境  
+簡易インストーラ または 手動でのセットアップ  
 
 ## 入門チュートリアル
-
 [1. Siv3D の基本](Tutorials/Getting-started-with-siv3d.md)  
 [2. 図形を描く](Tutorials/Draw-shape.md)  
 [3. テクスチャを描く](Tutorials/Draw-texture.md)  
@@ -34,11 +41,55 @@
 [30. シーン管理](Tutorials/SceneManager.md)  
 [31. 作ったアプリケーションの配布](Tutorials/Release.md)  
 
-## プログラミングガイド
+## サンプル集
+スケッチブック  
+画像ビューア  
+オーディオスペクトラム  
+マイク入力スペクトラム  
+文字色の反転  
+天気予報  
+ドットお絵かき  
+15 パズル  
+ブロックくずし  
+時計  
+時計(青)  
+ピアノ  
+ライフゲーム  
+aobench  
+地球  
+3D シーン  
+Leap Motion V2  
+3D 交差判定  
+Wooden Mirror  
+シューティングゲーム  
+Image to Polygon  
+Sketch to Polygon  
+軌跡  
+Plot3D  
+テンポとピッチの変更  
+長方形の影  
+パーティクル  
+Polygon to Mesh  
+3D テキスト  
+アプリ終了の確認  
+地形  
+アーカイブファイル  
+GUI のアニメーション  
+Aero Glass エフェクト  
+Glitch  
+カラーパレット GUI  
+リンクテキスト  
+付箋  
+シーン切り替え(シルエット)  
+MIDI シーケンサー  
+数つなぎ  
+画面を揺らす  
+対称定規  
 
-Addon  
-AnimatedGIFWriter  
-ApplicationUtility  
+## プログラミングガイド
+[Addon](Programming Guide/Addon.md)  
+[AnimatedGIFWriter](Programming Guide/AnimatedGIFWriter.md)  
+[ApplicationUtility](Programming Guide/ApplicationUtility.md)  
 AR  
 ArchivedFileReader  
 Array  
