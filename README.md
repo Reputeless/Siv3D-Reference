@@ -50,7 +50,7 @@ BinaryWriter
 BlendState  
 BoolArray  
 Box  
-Box2D Addon
+Box2D Addon  
 ByteArray  
 CSVReader  
 CSVWriter  
@@ -146,7 +146,7 @@ Key
 KinectV1  
 KinectV2  
 KineticTypography  
-LeapMotion Addon
+LeapMotion Addon  
 Lerp  
 Light  
 Line  
