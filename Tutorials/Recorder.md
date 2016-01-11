@@ -219,8 +219,7 @@ void Main()
 
 		Rect(mouseX, 0, 1, Window::Height()).draw();
 
-		font(L"{:.1f}Hz"_fmt, fft.resolution() * mouseX)
-			.draw(Mouse::Pos().moveBy(0, -50));
+		font(L"{:.1f}Hz"_fmt, fft.resolution() * mouseX).draw(Mouse::Pos().moveBy(0, -50));
 	}
 ```
 
