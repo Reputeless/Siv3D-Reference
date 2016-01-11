@@ -12,12 +12,15 @@ Siv3D で作成したアプリケーションを実行するには、次の環�
 配布用のフォルダ内に以下のデータを配置します。
 - アプリケーションの実行ファイル (.exe)
  - Release ビルドでは最小で 15MB 程度になります。(プログラムや埋め込んだファイルの量に応じて増加します）
-- **`dll(x64)` 以外のファイルとフォルダを削除した** Engine フォルダ
- - Assets, Fonts, Shaders, Splash.png 等、dll(x64) フォルダ以外のファイルは .exe に埋め込まれます<br><img src="resource/Release/files.png"><br>
- - Config.ini は開発者向けのファイルのため、配布しません
+- **`dll(x64)` 以外のファイルとフォルダを削除した Engine フォルダ**
+ - Assets, Fonts, Shaders, Splash.png 等、dll(x64) フォルダ以外のファイルは .exe に埋め込まれます
+  - Config.ini は開発者向けのファイルのため、配布しません<br><img src="resource/Release/files.png"><br>
 - アプリケーションが使う画像やサウンドなどのファイル（.exe に埋め込んでいなければ）
 - （必要であれば）ユーザーに読んでもらうマニュアルや README などのドキュメント
 
+### 例
+以下のような配置になります。  
+<img src="resource/Release/exe.png"><br>
 Web 上で公開する場合はこれらをまとめて zip 圧縮しましょう。
 
 ## ヒント
