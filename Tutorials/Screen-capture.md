@@ -12,4 +12,4 @@ Ctrl + PrintScreen キーを押すと自動でプレイムービーの録画が�
 保存先は実行ファイルのディレクトリの Screenshot フォルダです。  
 この機能をオフにしたい場合は `ScreenCapture::EnableVideoCapture(false)` を呼びます。
 
-[← 前の章へ戻る](Particle.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](SceneManager.md)
+[← 前の章へ戻る](Particle.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Release.md)

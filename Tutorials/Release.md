@@ -1,4 +1,4 @@
-﻿# 33. アプリケーションの配布
+﻿# 32. アプリケーションの配布
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](SceneManager.md)　|　[- 目次 -](Index.md)　||
+[← 前の章へ戻る](Screen-capture.md)　|　[- 目次 -](Index.md)　||
