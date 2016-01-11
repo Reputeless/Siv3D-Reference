@@ -86,7 +86,7 @@ void Main()
 ## 3D 形状にテクスチャを貼る
 ![3D 形状にテクスチャを貼る](resource/Draw-3d/texture.png "3D 形状にテクスチャを貼る")  
 3D 描画に用いる `Texture` を作成する際は、`TextureDesc::For3D` を指定します。  
-この指定により、エンジン内部で sRGB フォーマットの設定とミップマップが作成され、3D 描画に適した Texture を作成できます。
+この指定により、エンジン内部で sRGB フォーマットの設定とミップマップが作成され、3D 描画に適した Texture が作成されます。
 ```cpp
 # include <Siv3D.hpp>
 
@@ -177,6 +177,8 @@ void Main()
 
 ## 3D モデルデータを読み込む
 ![3D モデルデータを読み込む](resource/Draw-3d/model.png "3D モデルデータを読み込む")  
+現在のバージョンで対応している 3D モデルファイルの形式は Wavefront OBJ (.obj) のみです。  
+OBJ 以外の形式のローダーを独自に実装する場合は、`MeshData` を使って `Mesh` の集合を作成してください。
 ```cpp
 # include <Siv3D.hpp>
 
@@ -280,6 +282,9 @@ void Main()
 
 ## ライティングを設定する
 ![ライティングを設定する](resource/Draw-3d/light.png "ライティングを設定する")  
+光源の種類は `Light::None()` (なし), `Light::Directional()` (平行光源), `Light::Point()` (点光源) の 3 種類です。  
+デフォルトでは インデックス 0 に `Light::Directional({ 0.1, 0.5, -0.9 }, { 1.0, 1.0, 1.0 })` が設定されています。  
+光源の上限数は `Graphics3D::MaxLight` で定義されている 128 個です。後述する Forward Rendering の光源の上限数は `Graphics3D::MaxLightForward` で定義されている 4 個です。
 ```cpp
 # include <Siv3D.hpp>
 
@@ -372,6 +377,7 @@ void Main()
 
 ## フォグを設定する
 ![フォグを設定する](resource/Draw-3d/fog.png "フォグを設定する")  
+フォグは `Fog::None()` (なし), `Fog::Linear()` (線形フォグ), `Fog::Exponential()` (指数フォグ), `Fog::SquaredExponential()` (平方指数フォグ), `Fog::Height()` (高さフォグ) の 5 種類が用意されています。
 ```cpp
 # include <Siv3D.hpp>
 
