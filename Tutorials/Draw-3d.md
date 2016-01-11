@@ -16,6 +16,7 @@ void Main()
 
 ## 3D 空間を自由に移動する
 ![3D 空間を自由に移動する](resource/Draw-3d/freecamera.png "3D 空間を自由に移動する")  
+`Graphics3D::FreeCamera()` を毎フレーム呼ぶと、W, A, S, D, E, X, アローキーを使って 3D 空間を移動できるようになります。
 ```cpp
 # include <Siv3D.hpp>
 
