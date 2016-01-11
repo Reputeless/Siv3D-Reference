@@ -1,4 +1,4 @@
-﻿# 32. アプリケーションの配布
+﻿# 番外編: さらに学ぶには
 
 ## XXXXX
 
@@ -6,4 +6,4 @@
 XXXXXXXXXXXXXXXXXXXXXX
 ```
 
-[← 前の章へ戻る](Screen-capture.md)　|　[- 目次 -](Index.md)　||
+[← 前の章へ戻る](Release.md)　|　[- 目次 -](Index.md)　||
