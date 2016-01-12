@@ -6,7 +6,7 @@
 
 ## インストール方法
 - <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
-- 簡易インストーラ または 手動でのセットアップ  
+- <a href="Install/Installer.md" target="_blank">簡易インストーラ</a> または <a href="Install/Manual-setup.md" target="_blank">手動でのセットアップ</a>  
 
 ## 入門チュートリアル
 | | | |
