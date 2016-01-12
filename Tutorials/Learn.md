@@ -1,27 +1,26 @@
 ﻿# 番外編: さらに学ぶには
 
 ## Siv3D ヘッダを読む
-Visual Studio で `<Siv3D.hpp>` を右クリックして Siv3D.hpp を開くと、Siv3D のすべての機能を確認できます。主要な機能にはドキュメントが記載されています。
+![Siv3D ヘッダを読む](resource/Learn/header.png "Siv3D ヘッダを読む")  
+`<Siv3D.hpp>` を右クリックしてライブラリのヘッダを開くと、Siv3D のすべての機能を確認できます。主要な機能にはドキュメントが記載されています。
+![Siv3D ヘッダを読む](resource/Learn/header2.png "Siv3D ヘッダを読む")  
 
-## Visual Studio の Intellisense を活用する
-ヘッダを開かなくても、関数や定数の上にカーソルを重ねれば簡単な説明が表示されます。
+## Visual Studio の IntelliSense を活用する
+![Visual Studio の IntelliSense を活用する](resource/Learn/intellisense.png "Visual Studio の IntelliSense を活用する")  
+関数や定数の上にカーソルを重ねると簡単な説明が表示されます。
 
 ## サンプルやプログラミングガイドを読む
-簡単なアプリケーションのプログラムが紹介されている サンプル や ヘッダごとに機能を解説する プログラミングガイド を提供しています。
+リファレンスでは簡単なアプリケーションの <a href="../Example/Index.md" target="_blank">サンプル</a> や ヘッダごとに機能を解説する <a href="../Programming Guide/Index.md" target="_blank">プログラミングガイド</a> を提供しています。
 
 ## Web 上の記事を読む
-Qiita や個人ブログで Siv3D の記事が見つかります。
+<a href="http://qiita.com/tags/Siv3D" target="_blank">Qiita</a> などのサイトで Siv3D の記事が見つかります。
 
-## Siv3D について質問する
-- ユーザーチャットグループ
-- ユーザー助け合い所
-- Twitter
+## Siv3D について質問する・情報を集める
+- <a href="http://play-siv3d.hateblo.jp/entry/slack" target="_blank">ユーザーチャット</a>
+- <a href="http://siv3d.jp/bbs/patio.cgi" target="_blank">ユーザー掲示板</a>
+- <a href="https://twitter.com/search?f=tweets&vertical=default&q=siv3d&src=savs" target="_blank">Twitter</a>  
 
-## Siv3D のイベントに参加する
-
-
-
-
-Siv3D プログラミングを楽しみましょう！
+などで、Siv3D の使い方や機能について相談したり、情報を集めたりできます。  
+また、Siv3D で開発したゲームやアプリを宣伝することもできます。
 
 [← 前の章へ戻る](Release.md)　|　[- 目次 -](Index.md)　||
