@@ -53,45 +53,44 @@
 |   モジュール   |   機能概要    |
 |:---------|:---------|
 |   <a href="Programming Guide/Addon.md" target="_blank">Addon</a>  |   アドオン    |
-|	<a href="Programming Guide/AnimatedGIFWriter.md" target="_blank">AnimatedGIFWriter</a> 	|		|
-|	<a href="Programming Guide/ApplicationUtility.md" target="_blank">ApplicationUtility</a>	|		|
-|	AR	|		|
-|	ArchivedFileReader	|		|
-|	Array	|		|
-|	Arrow	|		|
-|	Asset	|		|
-|	Base64	|		|
-|	BinaryReader	|		|
-|	BinaryWriter	|		|
-|	BlendState	|		|
-|	BoolArray	|		|
-|	Box	|		|
-|	Box2D	|		|
-|	ByteArray	|		|
-|	CSVReader	|		|
-|	CSVWriter	|		|
-|	Camera	|		|
-|	Char	|		|
-|	CharacterSet	|		|
-|	Circle	|		|
-|	Circular	|		|
-|	Clipboard	|		|
-|	Color	|		|
-|	CommandLine	|		|
-|	Compression	|		|
-|	Cone	|		|
-|	Config	|		|
-|	Console	|		|
-|	ConstantBuffer	|		|
-|	Crypto	|		|
-|	CubicBezier	|		|
-|	Cursor	|		|
+|	<a href="Programming Guide/AnimatedGIFWriter.md" target="_blank">AnimatedGIFWriter</a> 	|	GIF アニメーションの書き出し	|
+|	<a href="Programming Guide/ApplicationUtility.md" target="_blank">ApplicationUtility</a>	|	簡易テキスト出力	|
+|	AR	|	AR マーカー	|
+|	ArchivedFileReader	|	アーカイブファイルからの読み込み	|
+|	Array	|	動的配列	|
+|	Arrow	|	矢印形	|
+|	Asset	|	アセット管理	|
+|	Base64	|	Base64	|
+|	BinaryReader	|	バイナリファイルの読み込み	|
+|	BinaryWriter	|	バイナリファイルの書き込み	|
+|	BlendState	|	ブレンドステート	|
+|	BoolArray	|	bool 型の動的配列	|
+|	Box	|	ボックス（3D形状）   |
+|	Box2D	|	物理演算ライブラリ Box2D	|
+|	ByteArray	|	読み込み用バッファ	|
+|	Camera	|	3D カメラ	|
+|	Char	|	文字	|
+|	CharacterSet	|	文字コード変換	|
+|	Circle	|	円（2D図形）	|
+|	Circular	|	円座標	|
+|	Clipboard	|	クリップボード	|
+|	Color	|	RGB カラー	|
+|	CommandLine	|	コマンドライン	|
+|	Compression	|	Deflate によるデータの圧縮・展開	|
+|	Cone	|	円錐（3D形状）	|
+|	Console	|	コンソールウィンドウ	|
+|	ConstantBuffer	|	シェーダの定数バッファ	|
+|	Crypto	|	AES128 による暗号化	|
+|	CSVReader	|	CSV ファイルの読み込み	|
+|	CSVWriter	|	CSV ファイルの書き出し	|
+|	CubicBezier	|	3 次ベジェ曲線	|
+|	Cursor	|	カーソル	|
 |	CustomColor	|		|
 |	CustomImage	|		|
 |	Cylinder	|		|
 |	Cylindrical	|		|
-|	Date	|		|
-|	DateTime	|		|
+|	Date	|	日付	|
+|	DateTime	|	日付と時刻	|
 |	DepthStencilState	|		|
 |	Dialog	|		|
 |	Dialog	|		|
@@ -99,26 +98,31 @@
 |	Disc	|		|
 |	Distribution	|		|
 |	Dragdrop	|		|
-|	Duration	|		|
+|	Duration	|	時間の単位	|
 |	DynamicMesh	|		|
 |	DynamicTexture	|		|
 |	Easing	|		|
 |	EasingController	|		|
 |	Effect	|		|
 |	Ellipse	|		|
-|	EventTimer	|		|
+|	EventTimer	|	イベント付きストップウォッチ	|
 |	ExpressionParser	|		|
 |	FFT	|		|
 |	FileArchive	|		|
-|	FileMonitor	|		|
-|	FileSystem	|		|
+|	FileMonitor	|	ファイルとディレクトリの変更の監視	|
+|	FileSystem	|	ファイルとディレクトリ	|
 |	FloatShape	|		|
-|	Fog	|		|
+|	Fog	|	フォグの設定（3D 描画）	|
 |	Font	|		|
 |	FontAsset	|		|
-|	Format	|		|
-|	FormatInt	|		|
-|	Fwd	|		|
+|	Format	|	データ → 文字列 の変換	|
+|	Gamepad	|		|
+|	Geometry2D	|		|
+|	Geometry3D	|		|
+|	Graphics	|		|
+|	Graphics2D	|		|
+|	Graphics3D	|		|
+|	Grid	|	動的二次元配列	|
 |	GUI	|		|
 |	GUIAsset	|		|
 |	GUIButton	|		|
@@ -133,29 +137,22 @@
 |	GUITextField	|		|
 |	GUITexture	|		|
 |	GUIToggleSwitch	|		|
-|	Gamepad	|		|
-|	Geometry2D	|		|
-|	Geometry3D	|		|
-|	Graphics	|		|
-|	Graphics2D	|		|
-|	Graphics3D	|		|
-|	Grid	|		|
-|	HSV	|		|
-|	HTTPClient	|		|
 |	HalfFloat	|		|
 |	Handle	|		|
 |	HandwritingRecognizer	|		|
 |	HandwritingTrainer	|		|
 |	HighPerfoemanceGraphics	|		|
+|	HSV	|		|
+|	HTTPClient	|		|
 |	INIReader	|		|
 |	INIWriter	|		|
-|	IReader	|		|
-|	IWidget	|		|
-|	IWriter	|		|
-|	Image	|		|
 |	Input	|		|
 |	InputLayout	|		|
 |	Internet	|		|
+|	IReader	|	IReader インタフェース	|
+|	IWidget	|		|
+|	IWriter	|		|
+|	Image	|		|
 |	JSONReader	|		|
 |	JSONValue	|		|
 |	Key	|		|
@@ -164,32 +161,32 @@
 |	KineticTypography	|		|
 |	LeapMotion	|		|
 |	Lerp	|		|
-|	Light	|		|
+|	Light	|	ライティングの設定（3D 描画）	|
 |	Line	|		|
 |	Line	|		|
 |	Line3D	|		|
 |	LineString	|		|
-|	Logger	|		|
+|	Logger	|	ログファイル	|
 |	Mat3x2	|		|
 |	Mat4x4	|		|
 |	Math	|		|
 |	MathConstants	|		|
-|	MediaPlayer	|		|
+|	MD5	|	MD5	|
+|	MediaPlayer	|	メディアプレイヤー (AVI, WMV, MP4 等に対応)	|
 |	MemoryWriter	|		|
 |	Mesh	|		|
 |	MeshData	|		|
 |	MessageBox	|		|
-|	MD5	|		|
 |	Midi	|		|
-|	Model	|		|
-|	ModelLoader	|		|
+|	Model	|	3D モデルデータ	|
+|	ModelLoader	|	OBJ ファイル読み込み	|
 |	Mouse	|		|
 |	MultiPolygon	|		|
 |	Namespace	|		|
 |	Network	|		|
-|	Number	|		|
-|	Optional	|		|
-|	Parse	|		|
+|	Number	|	数値	|
+|	Optional	|	無効値表現型	|
+|	Parse	|	文字列 → データ の変換	|
 |	Particle	|		|
 |	Pentablet	|		|
 |	PerlinNoise	|		|
@@ -198,11 +195,11 @@
 |	Point	|		|
 |	PointVector	|		|
 |	Polygon	|		|
-|	PostEffect	|		|
+|	PostEffect	|	ポストエフェクト	|
 |	Profiler	|		|
-|	ProfilerUtility	|		|
+|	ProfilerUtility	|	処理にかかった時間の測定	|
 |	PropertyMacro	|		|
-|	PyFmt	|		|
+|	PyFmt	|	Python 風の文字列フォーマット	|
 |	QR	|		|
 |	Quad	|		|
 |	QuadraticBezier	|		|
@@ -212,11 +209,11 @@
 |	Ray	|		|
 |	Recorder	|		|
 |	Rectangle	|		|
-|	Regex	|		|
+|	Regex	|	正規表現	|
 |	RenderState	|		|
 |	RenderTexture	|		|
-|	RoundRect	|		|
 |	RNG	|		|
+|	RoundRect	|		|
 |	SamplerState	|		|
 |	SceneManager	|		|
 |	ScreenCapture	|		|
@@ -226,17 +223,17 @@
 |	Shape	|		|
 |	SIMD	|		|
 |	Sound	|		|
-|	SoundAsset	|		|
+|	SoundAsset	|	Sound アセット	|
 |	SoundBeat	|		|
 |	Sphere	|		|
 |	Spherical	|		|
 |	Spline	|		|
 |	Sprite	|		|
-|	StaticAssertMacro	|		|
+|	StaticAssertMacro	|	static assert	|
 |	Step	|		|
-|	Stopwatch	|		|
-|	String	|		|
-|	StringView	|		|
+|	Stopwatch	|	ストップウォッチ	|
+|	String	|	文字列	|
+|	StringView	|	文字列ビュー	|
 |	System	|		|
 |	TCPClient	|		|
 |	TCPServer	|		|
@@ -248,34 +245,34 @@
 |	TextureRegion	|		|
 |	TexturedQuad	|		|
 |	Threading	|		|
-|	Time	|		|
+|	Time	|	時間	|
 |	TobiiEyeX	|		|
 |	Touch	|		|
 |	TransformedMesh	|		|
 |	Triangle	|		|
 |	Triangle3D	|		|
 |	Twitter	|		|
-|	Types	|		|
+|	Types	|	型	|
 |	UID	|		|
-|	Uncopyable	|		|
-|	Unspecified	|		|
-|	Utility	|		|
-|	VariableSpeedStopwatch	|		|
+|	Uncopyable	|	コピー禁止クラス	|
+|	Unspecified	|	unspecified	|
+|	Utility	|	ユーティリティ	|
+|	VariableSpeedStopwatch	|	スピードを変更可能なストップウォッチ	|
 |	Vector2D	|		|
 |	Vector3D	|		|
 |	Vector4D	|		|
-|	<a href="Programming Guide/Version.md" target="_blank">Version</a>	|		|
+|	<a href="Programming Guide/Version.md" target="_blank">Version</a>	|	ライブラリのバージョン	|
 |	VertexShader	|		|
-|	VideoPlayer	|		|
-|	VideoReader	|		|
-|	VideoWriter	|		|
-|	Wave	|		|
-|	WaveSample	|		|
-|	WaveStretcher	|		|
-|	Webcam	|		|
-|	WidgetStyle	|		|
-|	Window	|		|
-|	XInput	|		|
-|	XMLReader	|		|
-|	ZIPReader	|		|
-|	ZIPWriter	|		|
+|	VideoPlayer	|	ムービー (AVI, WMV 等に対応)	|
+|	VideoReader	|	動画ファイルの読み込み	|
+|	VideoWriter	|	動画ファイルの書き出し	|
+|	Wave	|	音声波形	|
+|	WaveSample	|	音声波形のサンプル	|
+|	WaveStretcher	|	音声波形のテンポ・ピッチ変更	|
+|	Webcam	|	Web カメラ	|
+|	WidgetStyle	|	ウィジェットのスタイル	|
+|	Window	|	ウィンドウ	|
+|	XInput	|	XInput 対応ゲームコントローラー	|
+|	XMLReader	|	XML ファイルの読み込み	|
+|	ZIPReader	|	ZIP 圧縮ファイルの読み込み	|
+|	ZIPWriter	|	ZIP 圧縮ファイルの書き出し	|
