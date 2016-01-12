@@ -86,7 +86,7 @@ void Main()
 
 void Draw()
 {
-	FontAsset(L"font").draw(L"Hello, Siv3D!");
+	FontAsset(L"font")(L"Hello, Siv3D!").draw();
 }
 
 void Main()
