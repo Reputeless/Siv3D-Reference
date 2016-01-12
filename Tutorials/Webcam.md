@@ -1,7 +1,7 @@
 ﻿# 22. Web カメラ
 
 ## 利用可能な Web カメラの一覧を取得する
-
+![利用可能な Web カメラの一覧を取得する](resource/Webcam/enumerate.png "利用可能な Web カメラの一覧を取得する")  
 ```cpp
 # include <Siv3D.hpp>
 

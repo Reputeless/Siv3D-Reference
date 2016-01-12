@@ -12,7 +12,7 @@ void Main()
 
 	GUI gui(GUIStyle::Default);
 	gui.add(L"method", GUIRadioButton::Create(
-	{ L"Default", L"Additive", L"Subtractive", L"Multiplicative", L"Multiplicative2X", L"Opaque" }, 0u, true));
+	{ L"Default", L"Additive", L"Subtractive", L"Multiplicative", L"Multiplicative2X", L"Opaque" }, 0u));
 
 	while (System::Update())
 	{
@@ -63,7 +63,7 @@ void Main()
 
 	GUI gui(GUIStyle::Default);
 	gui.add(L"method", GUIRadioButton::Create(
-	{ L"Default2D", L"WireframeCullNone" }, 0u, true));
+	{ L"Default2D", L"WireframeCullNone" }, 0u));
 
 	while (System::Update())
 	{
@@ -132,7 +132,7 @@ void Main()
 
 	GUI gui(GUIStyle::Default);
 	gui.add(L"method", GUIRadioButton::Create(
-	{ L"None (Default)", L"Test NotEqual", L"Test Equal" }, 0u, true));
+	{ L"None (Default)", L"Test NotEqual", L"Test Equal" }, 0u));
 
 	while (System::Update())
 	{
@@ -174,7 +174,7 @@ void Main()
 
 	GUI gui(GUIStyle::Default);
 	gui.add(L"method", GUIRadioButton::Create(
-	{ L"Point", L"Mipped + Point", L"Linear (Default2D)", L"Mipped + Linear" }, 2u, true));
+	{ L"Point", L"Mipped + Point", L"Linear (Default2D)", L"Mipped + Linear" }, 2u));
 
 	gui.setPos(50, 300);
 
@@ -228,7 +228,7 @@ void Main()
 
 	GUI gui(GUIStyle::Default);
 	gui.add(L"method", GUIRadioButton::Create(
-	{ L"Wrap (Default)", L"Clamp" }, 0u, true));
+	{ L"Wrap (Default)", L"Clamp" }, 0u));
 	gui.setPos(430, 20);
 
 	while (System::Update())
