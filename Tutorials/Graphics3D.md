@@ -134,7 +134,7 @@ void Main()
 
 ## サンプラーステート
 ![サンプラーステート](resource/Graphics3D/sampler.png "サンプラーステート")  
-3D 描画のデフォルトは `
+3D 描画のデフォルトは `WrapAniso` です。
 ```cpp
 # include <Siv3D.hpp>
 
