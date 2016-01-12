@@ -2,7 +2,7 @@
 
 ## Siv3D ヘッダを読む
 ![Siv3D ヘッダを読む](resource/Learn/header.png "Siv3D ヘッダを読む")  
-`<Siv3D.hpp>` を右クリックしてライブラリのヘッダを開くと、Siv3D のすべての機能を確認できます。主要な機能にはドキュメントが記載されています。
+`<Siv3D.hpp>` を右クリックしてライブラリのヘッダを開くと、Siv3D のすべての機能を確認できます。主要な機能にはドキュメントが記載されています。  
 ![Siv3D ヘッダを読む](resource/Learn/header2.png "Siv3D ヘッダを読む")  
 
 ## Visual Studio の IntelliSense を活用する
