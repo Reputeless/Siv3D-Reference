@@ -1,8 +1,8 @@
 ﻿# Siv3D リファレンス | January 2016
 
 ## Siv3D January 2016 の新機能
-- リリースノート  
-- 新機能サンプル  
+- <a href="What's New/ReleaseNotes.md" target="_blank">リリースノート</a>  
+- <a href="What's New/Features.md" target="_blank">新機能サンプル</a>  
 
 ## インストール方法
 - <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
