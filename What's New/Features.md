@@ -1,4 +1,4 @@
-﻿# Siv3D January 2016 の新機能サンプル
+﻿# Siv3D January 2016 新機能サンプル
 
 ## XXXXXXXXXX
 ![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
