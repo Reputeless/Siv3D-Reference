@@ -20,7 +20,7 @@
 - <a href="http://siv3d.jp/bbs/patio.cgi" target="_blank">ユーザー掲示板</a>
 - <a href="https://twitter.com/search?f=tweets&vertical=default&q=siv3d&src=savs" target="_blank">Twitter</a>  
 
-などで、Siv3D の使い方や機能について相談したり、情報を集めたりできます。  
-また、Siv3D で開発したゲームやアプリを宣伝することもできます。
+などで Siv3D の使い方や機能について相談したり、情報を集めたりしましょう。  
+Siv3D で開発したゲームやアプリを宣伝する場としても活用できます。
 
 [← 前の章へ戻る](Release.md)　|　[- 目次 -](Index.md)　||
