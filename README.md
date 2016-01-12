@@ -50,7 +50,7 @@
 
 ## プログラミングガイド
 
-|ヘッダ|機能概要|
+|   モジュール   |   機能概要    |
 |:---------|:---------|
 |   <a href="Programming Guide/Addon.md" target="_blank">Addon</a>  |   アドオン    |
 |	<a href="Programming Guide/AnimatedGIFWriter.md" target="_blank">AnimatedGIFWriter</a> 	|		|
