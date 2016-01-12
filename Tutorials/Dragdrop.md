@@ -1,7 +1,7 @@
 ﻿# 14. ドラッグ & ドロップ
 
 ## ドロップされたアイテム
-
+![ドロップされたアイテム](resource/Dragdrop/dragdrop.png "ドロップされたアイテム")  
 ```cpp
 # include <Siv3D.hpp>
 

@@ -26,7 +26,7 @@ void Main()
 ```
 
 ## テクスチャを開く
-
+![テクスチャを開く](resource/Dialog/openimage.png "テクスチャを開く")  
 ```cpp
 # include <Siv3D.hpp>
 
