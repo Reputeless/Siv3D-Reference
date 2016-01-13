@@ -41,7 +41,7 @@ void Main()
 ```
 ## イラストから顔を検出する
 ![イラストから顔を検出する](resource/Facedetection/FacedetectionAnime.png "イラストから顔を検出する")  
-イラスト: <a href="http://www.pixiv.net/member.php?id=583587" target="_blank">古古米</a> さん
+イラスト提供: <a href="http://www.pixiv.net/member.php?id=583587" target="_blank">古古米</a> さん
 ```cpp
 # include <Siv3D.hpp>
 

@@ -1,6 +1,6 @@
 ﻿# 15 パズル
 ![15 パズル](resource/15Puzzle/15Puzzle.gif "15 パズル")  
-イラスト: <a href="http://www.pixiv.net/member.php?id=583587" target="_blank">古古米</a> さん
+イラスト提供: <a href="http://www.pixiv.net/member.php?id=583587" target="_blank">古古米</a> さん
 ```cpp
 # include <Siv3D.hpp>
 
