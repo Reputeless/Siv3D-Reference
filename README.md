@@ -85,57 +85,56 @@
 |	CSVWriter	|	CSV ファイルの書き出し	|
 |	CubicBezier	|	3 次ベジェ曲線	|
 |	Cursor	|	カーソル	|
-|	CustomColor	|		|
-|	CustomImage	|		|
-|	Cylinder	|		|
-|	Cylindrical	|		|
+|	CustomColor	|	カスタムカラーフォーマット	|
+|	CustomImage	|	カスタムカラーフォーマットの画像	|
+|	Cylinder	|	円柱（3D 形状）	|
+|	Cylindrical	|	円柱座標	|
 |	Date	|	日付	|
 |	DateTime	|	日付と時刻	|
-|	DepthStencilState	|		|
-|	Dialog	|		|
-|	Dialog	|		|
-|	DirectXMathUtility	|		|
-|	Disc	|		|
-|	Distribution	|		|
-|	Dragdrop	|		|
+|	DepthStencilState	|	デプスステートとステンシルステート	|
+|	Dialog	|	ダイアログ	|
+|	DirectXMathUtility	|	DirectXMath ユーティリティ	|
+|	Disc	|	円盤（3D 形状）	|
+|	Distribution	|	乱数の分布	|
+|	Dragdrop	|	ドラッグ & ドロップ	|
 |	Duration	|	時間の単位	|
-|	DynamicMesh	|		|
-|	DynamicTexture	|		|
-|	Easing	|		|
-|	EasingController	|		|
-|	Effect	|		|
-|	Ellipse	|		|
+|	DynamicMesh	|	動的メッシュ	|
+|	DynamicTexture	|	動的テクスチャ	|
+|	Easing	|	イージング関数	|
+|	EasingController	|	イージング ユーティリティ	|
+|	Effect	|	エフェクト	|
+|	Ellipse	|	楕円（2D 図形）	|
 |	EventTimer	|	イベント付きストップウォッチ	|
-|	ExpressionParser	|		|
-|	FFT	|		|
-|	FileArchive	|		|
+|	ExpressionParser	|	数式パーサー	|
+|	FFT	|	FFT	|
+|	FileArchive	|	アーカイブファイル	|
 |	FileMonitor	|	ファイルとディレクトリの変更の監視	|
 |	FileSystem	|	ファイルとディレクトリ	|
-|	FloatShape	|		|
+|	FloatShape	|	レンダリング用形状	|
 |	Fog	|	フォグの設定（3D 描画）	|
-|	Font	|		|
-|	FontAsset	|		|
+|	Font	|	フォント	|
+|	FontAsset	|	Font アセット	|
 |	Format	|	データ → 文字列 の変換	|
-|	Gamepad	|		|
-|	Geometry2D	|		|
-|	Geometry3D	|		|
-|	Graphics	|		|
-|	Graphics2D	|		|
-|	Graphics3D	|		|
+|	Gamepad	|	ゲームパッド	|
+|	Geometry2D	|	2D 幾何	|
+|	Geometry3D	|	3D 幾何	|
+|	Graphics	|	グラフィックス全般	|
+|	Graphics2D	|	2D グラフィックス設定	|
+|	Graphics3D	|	3D グラフィックス設定	|
 |	Grid	|	動的二次元配列	|
-|	GUI	|		|
-|	GUIAsset	|		|
-|	GUIButton	|		|
-|	GUICheckBox	|		|
-|	GUIColorPalette	|		|
-|	GUIHorizontalLine	|		|
-|	GUINewLine	|		|
-|	GUIRadioButton	|		|
-|	GUISlider	|		|
-|	GUIText	|		|
-|	GUITextArea	|		|
-|	GUITextField	|		|
-|	GUITexture	|		|
+|	GUI	|	GUI	|
+|	GUIAsset	|	GUI アセット	|
+|	GUIButton	|	ボタン（GUI ウィジェット）	|
+|	GUICheckBox	|	チェックボック（GUI ウィジェット）	|
+|	GUIColorPalette	|	カラーパレット（GUI ウィジェット）	|
+|	GUIHorizontalLine	|	水平線（GUI ウィジェット）	|
+|	GUINewLine	|	改行（GUI ウィジェット）	|
+|	GUIRadioButton	|	ラジオボタン（GUI ウィジェット）	|
+|	GUISlider	|	水平スライダー（GUI ウィジェット）	|
+|	GUIText	|	テキスト（GUI ウィジェット）	|
+|	GUITextArea	|	テキスト入力エリア（GUI ウィジェット）	|
+|	GUITextField	|	テキスト入力フィールド（GUI ウィジェット）	|
+|	GUITexture	|	テクスチャ（GUI ウィジェット）	|
 |	GUIToggleSwitch	|	トグルスイッチ（GUI ウィジェット）	|
 |	HalfFloat	|	半精度浮動小数点数	|
 |	HandwritingRecognizer	|	手書き文字認識	|
