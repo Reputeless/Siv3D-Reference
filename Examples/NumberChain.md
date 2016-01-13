@@ -1,5 +1,5 @@
-﻿# XXXXXXXXXXXXX
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
+﻿# 数つなぎ
+![数つなぎ](resource/NumberChain/NumberChain.png "数つなぎ") 
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```

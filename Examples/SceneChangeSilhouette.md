@@ -1,5 +1,5 @@
 ﻿# XXXXXXXXXXXXX
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
+![XXXXXXXXXXXX](resource/SceneChangeSilhouette/SceneChangeSilhouette.png "XXXXXXXXXX") 
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```

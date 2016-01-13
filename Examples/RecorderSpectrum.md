@@ -1,5 +1,5 @@
 ﻿# XXXXXXXXXXXXX
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
+![XXXXXXXXXXXX](resource/RecorderSpectrum/RecorderSpectrum.gif "XXXXXXXXXX") 
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
