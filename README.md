@@ -50,6 +50,8 @@
 
 ## プログラミングガイド
 
+順次アップデートされます。
+
 |   モジュール   |   機能概要    |
 |:---------|:---------|
 |   <a href="Programming Guide/Addon.md" target="_blank">Addon</a>  |   アドオン    |
