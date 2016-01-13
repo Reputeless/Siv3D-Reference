@@ -65,19 +65,19 @@
 |	BinaryWriter	|	バイナリファイルの書き込み	|
 |	BlendState	|	ブレンドステート	|
 |	BoolArray	|	bool 型の動的配列	|
-|	Box	|	ボックス（3D形状）   |
+|	Box	|	ボックス（3D 形状）   |
 |	Box2D	|	物理演算ライブラリ Box2D	|
 |	ByteArray	|	読み込み用バッファ	|
 |	Camera	|	3D カメラ	|
 |	Char	|	文字	|
 |	CharacterSet	|	文字コード変換	|
-|	Circle	|	円（2D図形）	|
+|	Circle	|	円（2D 図形）	|
 |	Circular	|	円座標	|
 |	Clipboard	|	クリップボード	|
 |	Color	|	RGB カラー	|
 |	CommandLine	|	コマンドライン	|
 |	Compression	|	Deflate によるデータの圧縮・展開	|
-|	Cone	|	円錐（3D形状）	|
+|	Cone	|	円錐（3D 形状）	|
 |	Console	|	コンソールウィンドウ	|
 |	ConstantBuffer	|	シェーダの定数バッファ	|
 |	Crypto	|	AES128 による暗号化	|
@@ -136,133 +136,129 @@
 |	GUITextArea	|		|
 |	GUITextField	|		|
 |	GUITexture	|		|
-|	GUIToggleSwitch	|		|
-|	HalfFloat	|		|
-|	Handle	|		|
-|	HandwritingRecognizer	|		|
-|	HandwritingTrainer	|		|
-|	HighPerfoemanceGraphics	|		|
-|	HSV	|		|
-|	HTTPClient	|		|
-|	INIReader	|		|
-|	INIWriter	|		|
-|	Input	|		|
-|	InputLayout	|		|
-|	Internet	|		|
+|	GUIToggleSwitch	|	トグルスイッチ（GUI ウィジェット）	|
+|	HalfFloat	|	半精度浮動小数点数	|
+|	HandwritingRecognizer	|	手書き文字認識	|
+|	HandwritingTrainer	|	手書き文字認識用の学習データ作成	|
+|	HighPerfoemanceGraphics	|	GPU の使用	|
+|	HSV	|	HSV カラー	|
+|	HTTPClient	|	HTTP	|
+|	INIReader	|	INI ファイルの読み込み	|
+|	INIWriter	|	INI ファイルの書き出し	|
+|	Input	|	入力全般	|
+|	InputLayout	|	頂点レイアウト	|
+|	Internet	|	インターネット	|
 |	IReader	|	IReader インタフェース	|
-|	IWidget	|		|
-|	IWriter	|		|
-|	Image	|		|
-|	JSONReader	|		|
-|	JSONValue	|		|
-|	Key	|		|
-|	KinectV1	|		|
-|	KinectV2	|		|
-|	KineticTypography	|		|
-|	LeapMotion	|		|
-|	Lerp	|		|
+|	IWidget	|	IWidget インタフェース	|
+|	IWriter	|	IWriter インタフェース	|
+|	Image	|	画像処理	|
+|	JSONReader	|	JSON ファイルの読み込み	|
+|	JSONValue	|	JSON のデータ	|
+|	Key	|	キー入力	|
+|	KinectV1	|	Kinect V1	|
+|	KinectV2	|	Kinect V2	|
+|	KineticTypography	|	キネティックタイポグラフィ	|
+|	LeapMotion	|	Leap Motion	|
+|	Lerp	|	線形補間	|
 |	Light	|	ライティングの設定（3D 描画）	|
-|	Line	|		|
-|	Line	|		|
-|	Line3D	|		|
-|	LineString	|		|
+|	Line	|	線分（2D 図形）	|
+|	Line3D	|	線分（3D 形状）	|
+|	LineString	|	連続した複数の線分（2D 図形）	|
 |	Logger	|	ログファイル	|
-|	Mat3x2	|		|
-|	Mat4x4	|		|
-|	Math	|		|
-|	MathConstants	|		|
+|	Mat3x2	|	3x2 行列	|
+|	Mat4x4	|	4x4 行列	|
+|	Math	|	数学関数	|
+|	MathConstants	|	数学定数	|
 |	MD5	|	MD5	|
 |	MediaPlayer	|	メディアプレイヤー (AVI, WMV, MP4 等に対応)	|
-|	MemoryWriter	|		|
-|	Mesh	|		|
-|	MeshData	|		|
-|	MessageBox	|		|
-|	Midi	|		|
+|	MemoryWriter	|	書き込み用バッファ	|
+|	Mesh	|	3D メッシュ	|
+|	MeshData	|	3D メッシュデータ	|
+|	MessageBox	|	メッセージボックス	|
+|	Midi	|	MIDI	|
 |	Model	|	3D モデルデータ	|
 |	ModelLoader	|	OBJ ファイル読み込み	|
-|	Mouse	|		|
-|	MultiPolygon	|		|
-|	Namespace	|		|
-|	Network	|		|
+|	Mouse	|	マウス	|
+|	MultiPolygon	|	多角形の集合（2D 図形）	|
+|	Namespace	|	ライブラリ名前空間の設定	|
+|	Network	|	ネットワーク	|
 |	Number	|	数値	|
 |	Optional	|	無効値表現型	|
 |	Parse	|	文字列 → データ の変換	|
-|	Particle	|		|
-|	Pentablet	|		|
-|	PerlinNoise	|		|
-|	PixelShader	|		|
-|	Plane	|		|
-|	Point	|		|
-|	PointVector	|		|
-|	Polygon	|		|
+|	Particle	|	3D パーティクル	|
+|	Pentablet	|	ペンタブレット	|
+|	PerlinNoise	|	Perlin Noise	|
+|	PixelShader	|	ピクセルシェーダ	|
+|	Plane	|	平面（3D 形状）	|
+|	Point	|	点、またはサイズ（2D 図形）	|
+|	Polygon	|	多角形（2D 図形）	|
 |	PostEffect	|	ポストエフェクト	|
-|	Profiler	|		|
+|	Profiler	|	プロファイリング	|
 |	ProfilerUtility	|	処理にかかった時間の測定	|
-|	PropertyMacro	|		|
 |	PyFmt	|	Python 風の文字列フォーマット	|
-|	QR	|		|
-|	Quad	|		|
-|	QuadraticBezier	|		|
-|	Quaternion	|		|
-|	Random	|		|
-|	RasterizerState	|		|
-|	Ray	|		|
-|	Recorder	|		|
-|	Rectangle	|		|
+|	QR	|	QR コードの作成と認識	|
+|	Quad	|	四角形（2D 図形）	|
+|	QuadraticBezier	|	2 次ベジェ曲線	|
+|	Quaternion	|	クォータニオン	|
+|	Random	|	乱数ユーティリティ	|
+|	RasterizerState	|	ラスタライザーステート	|
+|	Ray	|	レイ	|
+|	Recorder	|	マイク入力	|
+|	Rectangle	|	長方形（2D 図形）	|
 |	Regex	|	正規表現	|
-|	RenderState	|		|
-|	RenderTexture	|		|
-|	RNG	|		|
-|	RoundRect	|		|
-|	SamplerState	|		|
-|	SceneManager	|		|
-|	ScreenCapture	|		|
-|	Serial	|		|
-|	Serialization	|		|
-|	Shader	|		|
-|	Shape	|		|
-|	SIMD	|		|
-|	Sound	|		|
+|	RenderState	|	レンダーステート	|
+|	RenderTexture	|	レンダーテクスチャ	|
+|	RNG	|	乱数生成エンジン	|
+|	RoundRect	|	角丸長方形（2D 図形）	|
+|	SamplerState	|	サンプラーステート	|
+|	SceneManager	|	シーン管理	|
+|	ScreenCapture	|	スクリーンショット	|
+|	Serial	|	シリアル通信	|
+|	Serialization	|	シリアライゼーション	|
+|	Shader	|	シェーダのコンパイル	|
+|	Shape	|	2D 図形の Variant	|
+|	SIMD	|	SIMD	|
+|	Sound	|	サウンド	|
 |	SoundAsset	|	Sound アセット	|
-|	SoundBeat	|		|
-|	Sphere	|		|
-|	Spherical	|		|
-|	Spline	|		|
-|	Sprite	|		|
+|	SoundBeat	|	サウンドの拍カウント	|
+|	Sphere	|	球（3D 形状）	|
+|	Spherical	|	球面座標	|
+|	Spline	|	スプライン	|
+|	Sprite	|	2D スプライト	|
 |	StaticAssertMacro	|	static assert	|
-|	Step	|		|
+|	Step	|	ループ記述のユーティリティ	|
 |	Stopwatch	|	ストップウォッチ	|
 |	String	|	文字列	|
 |	StringView	|	文字列ビュー	|
-|	System	|		|
-|	TCPClient	|		|
-|	TCPServer	|		|
-|	TextReader	|		|
-|	TextWriter	|		|
-|	Texture	|		|
-|	TextureAsset	|		|
-|	TextureFormat	|		|
-|	TextureRegion	|		|
-|	TexturedQuad	|		|
-|	Threading	|		|
+|	System	|	システム	|
+|	TCPClient	|	TCP クライアント	|
+|	TCPServer	|	TCP サーバー	|
+|	TextReader	|	テキストファイルの読み込み	|
+|	TextWriter	|	テキストファイルの書き込み	|
+|	Texture	|	テクスチャ	|
+|	TextureAsset	|	Texture アセット	|
+|	TextureFormat	|	画像のフォーマット	|
+|	TextureRegion	|	領域を指定したテクスチャ	|
+|	TexturedQuad	|	四角形に貼り付けたテクスチャ	|
+|	Threading	|	マルチスレッド	|
 |	Time	|	時間	|
-|	TobiiEyeX	|		|
-|	Touch	|		|
-|	TransformedMesh	|		|
-|	Triangle	|		|
-|	Triangle3D	|		|
-|	Twitter	|		|
+|	TobiiEyeX	|	Tobii EyeX	|
+|	Touch	|	タッチ	|
+|	TransformedMesh	|	変換情報を持ったメッシュ	|
+|	Triangle	|	三角形（2D 図形）	|
+|	Triangle3D	|	三角形（3D 形状）	|
+|	Twitter	|	Twitter	|
 |	Types	|	型	|
-|	UID	|		|
+|	UID	|	ユーザ固有 ID の取得	|
 |	Uncopyable	|	コピー禁止クラス	|
 |	Unspecified	|	unspecified	|
 |	Utility	|	ユーティリティ	|
 |	VariableSpeedStopwatch	|	スピードを変更可能なストップウォッチ	|
-|	Vector2D	|		|
-|	Vector3D	|		|
-|	Vector4D	|		|
+|	Vector2D	|	2 次元ベクトル	|
+|	Vector3D	|	3 次元ベクトル	|
+|	Vector4D	|	4 次元ベクトル	|
 |	<a href="Programming Guide/Version.md" target="_blank">Version</a>	|	ライブラリのバージョン	|
-|	VertexShader	|		|
+|	VertexShader	|	頂点シェーダ	|
 |	VideoPlayer	|	ムービー (AVI, WMV 等に対応)	|
 |	VideoReader	|	動画ファイルの読み込み	|
 |	VideoWriter	|	動画ファイルの書き出し	|
