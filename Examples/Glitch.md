@@ -1,5 +1,5 @@
 ﻿# Glitch
-![Glitch](resource/Glitch/Glitch.png "Glitch") 
+![Glitch](resource/Glitch/Glitch.png "Glitch")  
 JPEG データを部分的に破壊して画像にエラーを起こします。
 ```cpp
 #include <Siv3D.hpp>
