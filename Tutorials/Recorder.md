@@ -221,6 +221,7 @@ void Main()
 
 		font(L"{:.1f}Hz"_fmt, fft.resolution() * mouseX).draw(Mouse::Pos().moveBy(0, -50));
 	}
+}
 ```
 
 [← 前の章へ戻る](Webcam.md)　|　[- 目次 -](Index.md)　|　[次の章へ進む →](Stopwatch.md)

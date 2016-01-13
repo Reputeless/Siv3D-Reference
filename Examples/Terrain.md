@@ -1,5 +1,5 @@
-﻿# XXXXXXXXXXXXX
-![XXXXXXXXXXXX](resource/Terrain/Terrain.gif "XXXXXXXXXX") 
+﻿# 地形
+![地形](resource/Terrain/Terrain.png "地形") 
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```

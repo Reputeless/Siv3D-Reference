@@ -1,5 +1,5 @@
-﻿# XXXXXXXXXXXXX
-![XXXXXXXXXXXX](resource/WoodenMirror/WoodenMirror.png "XXXXXXXXXX") 
+﻿# Wooden Mirror
+![Wooden Mirror](resource/WoodenMirror/WoodenMirror.png "Wooden Mirror") 
 ```cpp
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
