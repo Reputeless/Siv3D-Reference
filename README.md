@@ -154,8 +154,8 @@
 |	JSONReader	|	JSON ファイルの読み込み	|
 |	JSONValue	|	JSON のデータ	|
 |	Key	|	キー入力	|
-|	KinectV1	|	Kinect V1	|
-|	KinectV2	|	Kinect V2	|
+|	KinectV1	|	Kinect v1	|
+|	KinectV2	|	Kinect v2	|
 |	KineticTypography	|	キネティックタイポグラフィ	|
 |	LeapMotion	|	Leap Motion	|
 |	Lerp	|	線形補間	|
