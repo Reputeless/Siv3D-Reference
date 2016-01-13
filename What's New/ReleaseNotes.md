@@ -197,6 +197,7 @@
  - <b>ファイルアーカイブの際、アーカイブされた各ファイルの名前が元のディレクトリ名を含むよう仕様変更</b>
  - <b>AR の機能を Webcam クラスに統合</b>
  - <b>仮想フルスクリーンを標準のフルスクリーンに</b>
+ - ウィジェットの作成関数は IWidget でなくウィジェット自身のポインタを返すよう仕様変更 (Thanks sigureya)
  - 一部の Ray::test() を Ray::intersectsAt() に移行
  - MemoryReader::asArray() は参照を返すよう仕様変更
  - Grid::push_row() を Grid::push_back_row() に名称変更
