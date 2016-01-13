@@ -58,7 +58,7 @@
 |	AR	|	AR マーカー	|
 |	ArchivedFileReader	|	アーカイブファイルからの読み込み	|
 |	Array	|	動的配列	|
-|	Arrow	|	矢印形	|
+|	Arrow	|	矢印形（2D 図形）	|
 |	Asset	|	アセット管理	|
 |	Base64	|	Base64	|
 |	BinaryReader	|	バイナリファイルの読み込み	|
@@ -253,7 +253,7 @@
 |	Unspecified	|	unspecified	|
 |	Utility	|	ユーティリティ	|
 |	VariableSpeedStopwatch	|	スピードを変更可能なストップウォッチ	|
-|	Vector2D	|	2 次元ベクトル	|
+|	Vector2D	|	2 次元ベクトル（2D 図形）	|
 |	Vector3D	|	3 次元ベクトル	|
 |	Vector4D	|	4 次元ベクトル	|
 |	<a href="Programming Guide/Version.md" target="_blank">Version</a>	|	ライブラリのバージョン	|
