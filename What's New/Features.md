@@ -1,156 +1,124 @@
-﻿# Siv3D January 2016 おもな新機能サンプル
+﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
-## Visual Studio 2015 対応 (constexpr)
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
+## 手書き文字認識
+![手書き文字認識](resource/Handwriting.gif "手書き文字認識") 
 ```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
+# include <Siv3D.hpp>
 
-## Visual Studio 2015 対応 (ジェネリックラムダ)
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
+void Main()
+{
+    const HandwritingRecognizer recognizer(L"Example/Hiragana.model");
+    const Font font(34);
 
-## Visual Studio 2015 対応 (ユーザ定義リテラル)
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    Image image(400, 400, Palette::White);
+
+    DynamicTexture texture(image);
+
+    Array<Array<Point>> pointsList;
+
+    while (System::Update())
+    {
+        texture.draw();
+
+        if (Input::MouseL.pressed)
+        {
+            if (Input::MouseL.clicked)
+            {
+                pointsList.emplace_back();
+            }
+
+            pointsList.back().push_back(Mouse::Pos());
+
+            const Point from = Input::MouseL.clicked ? Mouse::Pos() : Mouse::PreviousPos();
+
+            Line(from, Mouse::Pos()).overwrite(image, 8, Palette::Blue);
+
+            texture.fill(image);
+        }
+
+        if (Input::MouseR.clicked)
+        {
+            pointsList.clear();
+
+            image.fill(Palette::White);
+
+            texture.fill(image);
+        }
+
+        const auto results = recognizer.recognize(image.size, pointsList);
+
+        for (auto i : step(int(results.size())))
+        {
+            const String text = results[i].character;
+
+            const double score = results[i].score;
+
+            const Rect rect(440, 20 + i * 70, 120, 60);
+
+            rect.draw(HSV(40, 1.0, Saturate(score + 1.0)));
+
+            font(text).drawCenter(rect.center, Palette::Black);
+        }
+    }
+}
 ```
 
 ## Mesh 描画時のカスタムシェーダ
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
+![Mesh 描画時のカスタムシェーダ](resource/Terrain.png "Mesh 描画時のカスタムシェーダ") 
 ```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# include <Siv3D.hpp>
+
+void Main()
+{
+    Window::Resize(1280, 720);
+    Graphics::SetBackground(Color(40, 150, 255));
+    Graphics3D::SetAmbientLight(ColorF(0.2, 0.3, 0.4));
+    Graphics3D::SetFog(Fog::SquaredExponential(Color(40, 150, 255), 0.002));
+
+    const VertexShader vsTerrain(L"Example/Shaders/Terrain3D.hlsl");
+    const PixelShader psTerrain(L"Example/Shaders/Terrain3D.hlsl");
+    if (!vsTerrain || !psTerrain)
+    {
+        return;
+    }
+
+    const Texture textureGround(L"Example/grass.jpg", TextureDesc::For3D);
+    const Mesh terrainBase(MeshData::TerrainBase(160));
+    RenderTexture heightMap{ 512, 512, ColorF(0), TextureFormat::R32_Float };
+
+    const Texture texture(Image(64, 64, [](Point p)
+    {
+        return ColorF(Pow(1 - Vec2(p).distanceFrom(Vec2(32, 32)) / (32 * 1.4142), 4));
+    }));
+
+    while (System::Update())
+    {
+        Graphics3D::FreeCamera();
+
+        if ((Input::MouseL | Input::MouseR).pressed)
+        {
+            Graphics2D::SetRenderTarget(heightMap);
+            Graphics2D::SetBlendState(Input::MouseL.pressed ? BlendState::Additive : BlendState::Subtractive);
+
+            texture.scale(2.5).drawAt(Mouse::Pos() - Point(1280 - 512 - 10, 10), ColorF(0.2));
+
+            Graphics2D::SetBlendState(BlendState::Default);
+            Graphics2D::SetRenderTarget(Graphics::GetSwapChainTexture());
+        }
+
+        Graphics3D::BeginVS(vsTerrain);
+        Graphics3D::BeginPS(psTerrain);
+        Graphics3D::SetTexture(ShaderStage::Vertex, 0, heightMap);
+        Graphics3D::SetSamplerState(ShaderStage::Vertex, 0, SamplerState::ClampLinear);
+
+        terrainBase.draw(textureGround);
+
+        Graphics3D::SetTexture(ShaderStage::Vertex, 0, none);
+        Graphics3D::EndPS();
+        Graphics3D::EndVS();
+
+        heightMap.draw(1280 - 512 - 10, 10, ColorF(0.3, 0.9));
+    }
+}
 ```
 
-## シリアライズ / デシリアライズ
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 手書き文字認識
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 再生している動画のフレームを Image や Texture として取得
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## TCP 通信
-### サーバー
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-### クライアント
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## RenderTexture
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 頂点シェーダによる高速な 2D 形状・パーティクル生成
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 直前のフレームを Texture として取得
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## あらゆる 2D 図形を格納できる Shape 型
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 2D 描画時のシザー矩形
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## .exe に埋め込んだファイルのロード
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 2 次ベジェ曲線と 3 次ベジェ曲線
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 数式処理
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## ZIP の書き出しをする ZIPWriter
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 暗号化データが正しく復号できたか検証する機能
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## MIDI ファイルのノート情報の取得
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## デスクトップの背景の取得
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## カラーパレット (GUI ウィジェット）
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## 3D 線分の描画
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## DynamicSound を Sound に統合
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## Opus 形式のオーディオファイル対応
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-## XXXXXX
-![XXXXXXXXXXXX](resource/XXXXXXXXXXX/XXXXXXX.png "XXXXXXXXXX") 
-```cpp
-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
