@@ -6,7 +6,7 @@
 - 環境変数 `SIV3D_20160110` に、解凍したフォルダ内にある Inc や Lib の **親フォルダ** のパスを指定します
  - 例: `C:\Users\UserName\Documents\Siv3DPackage(January2016)\Siv3DPackage(January2016)`
 
-- 解凍したフォルダ内にある `Siv3D(January2016).zip` を `ドキュメント/Visual Studio 2015/Templates/ProjectTemplates/` 内にコピーします
+- 解凍したフォルダ内にある `Siv3D(January2016).zip` を `ドキュメント/Visual Studio 2015/Templates/ProjectTemplates` フォルダ内にコピーします
 
 以上でインストールは完了です。アンインストールはこの逆の手順です。  
 
