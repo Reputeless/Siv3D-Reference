@@ -2,15 +2,15 @@
 ## 1. Siv3D のインストール
 - <a href="http://siv3d.jp/downloads/Siv3D/Siv3D_Installer.exe" target="_blank">Siv3D インストーラ</a> をダウンロードして実行します
 
-![Siv3D のインストール](resource/installer1.png "Siv3D のインストール")  
+![Siv3D のインストール](resource/installer1_480.png "Siv3D のインストール")  
 - OK を押します
 
-![Siv3D のインストール](resource/installer2.png "Siv3D のインストール")  
+![Siv3D のインストール](resource/installer2_480.png "Siv3D のインストール")  
 - この画面が表示されたらインストールは完了です
  - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md">手動でのセットアップ</a> を行ってください
 
 ## 2. プロジェクトの作成
-- Visual Studio 2015 を起動し、メニューから | ファイル | → | 新しいプロジェクト | を選択します
+- Visual Studio 2015 を起動し、メニューから | ファイル | → | 新規作成 | → | プロジェクト | を選択します
 
 - | ▼テンプレート | → | ▼Visual C++ | の一覧にある | Siv3D(January2016) | を選択します
 
@@ -35,5 +35,5 @@ void Main()
 おめでとうございます！最初の Siv3D プログラムが動きました。
 
 ## 3. Siv3D を楽しもう
-まずは基本的な機能とプログラムの書き方を体験しましょう。  
+Siv3D の基本的な機能とプログラムの書き方を体験しましょう。  
 トップページに戻り、チュートリアルに進んでください。
