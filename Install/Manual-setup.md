@@ -1,7 +1,7 @@
 ﻿# 手動でのセットアップ
 
 ## 1. インストール
-- <a href="#" target="_blank">Siv3D Package をダウンロード</a> し、適当なディレクトリに解凍します（あとで移動させることはできません）
+- <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(January2016).zip" target="_blank">Siv3D Package をダウンロード</a> し、適当なディレクトリに解凍します（あとで移動させることはできません）
 
 - 環境変数 `SIV3D_20160110` に、解凍したフォルダ内にある Inc や Lib の **親フォルダ** のパスを指定します
  - 例: `C:\Users\UserName\Documents\Siv3DPackage(January2016)\Siv3DPackage(January2016)`
@@ -29,7 +29,7 @@ void Main()
 	{
 		font(L"ようこそ、Siv3D の世界へ！").draw();
 
-		Circle(Mouse::Pos(), 50).draw(Color(255, 0, 0, 127));
+		Circle(Mouse::Pos(), 50).draw({ 255, 0, 0, 127 });
 	}
 }
 ```

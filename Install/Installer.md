@@ -1,11 +1,11 @@
 ﻿# 簡易インストーラ
 ## 1. Siv3D のインストール
-- <a href="#" target="_blank">Siv3D インストーラ</a> をダウンロードして実行します
+- <a href="http://siv3d.jp/downloads/Siv3D/Siv3D_Installer.exe" target="_blank">Siv3D インストーラ</a> をダウンロードして実行します
 
 - OK を押します
 
 - この画面が表示されたらインストールは完了です
- - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md" target="_blank">手動でのセットアップ</a> を行ってください
+ - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md">手動でのセットアップ</a> を行ってください
 
 ## 2. プロジェクトの作成
 - Visual Studio 2015 を起動し、メニューから | ファイル | → | 新しいプロジェクト | を選択します
@@ -26,7 +26,7 @@ void Main()
 	{
 		font(L"ようこそ、Siv3D の世界へ！").draw();
 
-		Circle(Mouse::Pos(), 50).draw(Color(255, 0, 0, 127));
+		Circle(Mouse::Pos(), 50).draw({ 255, 0, 0, 127 });
 	}
 }
 ```
