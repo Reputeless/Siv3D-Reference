@@ -178,7 +178,7 @@
 |	ModelLoader	|	OBJ ファイル読み込み	|
 |	Mouse	|	マウス	|
 |	MultiPolygon	|	多角形の集合（2D 図形）	|
-|	Namespace	|	ライブラリ名前空間の設定	|
+|	<a href="Programming Guide/Namespace.md" target="_blank">Namespace</a>	|	ライブラリ名前空間の設定	|
 |	Network	|	ネットワーク	|
 |	Number	|	数値	|
 |	Optional	|	無効値表現型	|
