@@ -2,8 +2,10 @@
 ## 1. Siv3D のインストール
 - <a href="http://siv3d.jp/downloads/Siv3D/Siv3D_Installer.exe" target="_blank">Siv3D インストーラ</a> をダウンロードして実行します
 
+![Siv3D のインストール](resource/installer1.png "Siv3D のインストール")  
 - OK を押します
 
+![Siv3D のインストール](resource/installer2.png "Siv3D のインストール")  
 - この画面が表示されたらインストールは完了です
  - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md">手動でのセットアップ</a> を行ってください
 
