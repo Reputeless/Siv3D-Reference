@@ -3,7 +3,7 @@
 ## 1. インストール
 - <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(January2016).zip" target="_blank">Siv3D Package をダウンロード</a> し、適当なディレクトリに解凍します（あとで移動させることはできません）
 
-- 環境変数 `SIV3D_20160110` に、解凍したフォルダ内にある Inc や Lib の **親フォルダ** のパスを指定します
+- ユーザ環境変数 `SIV3D_20160110` を作成し、解凍したフォルダ内にある Inc や Lib の **親フォルダ** のパスを指定します
  - 例: `C:\Users\UserName\Documents\Siv3DPackage(January2016)\Siv3DPackage(January2016)`
 
 - 解凍したフォルダ内にある `Siv3D(January2016).zip` を `ドキュメント/Visual Studio 2015/Templates/ProjectTemplates` フォルダ内にコピーします
