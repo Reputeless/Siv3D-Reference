@@ -66,6 +66,85 @@ void Main()
 }
 ```
 
+## TCP 通信
+![TCP 通信](resource/TCP.gif "TCP 通信")  
+### サーバー
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	TCPServer server;
+	server.startAccept(50000);
+	Point friendPos(0, 0);
+
+	Window::SetTitle(L"TCPServer: 接続待機中...");
+
+	while (System::Update())
+	{
+		if (server.isConnected())
+		{
+			Window::SetTitle(L"TCPServer: 接続完了！");
+
+			server.send(Mouse::Pos());
+
+			while (server.read(friendPos));
+		}
+
+		if (server.hasError())
+		{
+			server.disconnect();
+
+			Window::SetTitle(L"TCPServer: 再接続待機中...");
+
+			server.startAccept(50000);
+		}
+
+		Circle(Mouse::Pos(), 30).draw(Palette::Skyblue);
+
+		Circle(friendPos, 10).draw(Palette::Orange);
+	}
+}
+```
+### クライアント
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	TCPClient client;
+	client.connect(IPv4::localhost(), 50000);
+	Point friendPos(0, 0);
+
+	Window::SetTitle(L"TCPClient: 接続待機中...");
+
+	while (System::Update())
+	{
+		if (client.isConnected())
+		{
+			Window::SetTitle(L"TCPClient: 接続完了！");
+
+			client.send(Mouse::Pos());
+
+			while (client.read(friendPos));
+		}
+
+		if (client.hasError())
+		{
+			client.disconnect();
+
+			Window::SetTitle(L"TCPClient: 再接続待機中...");
+
+			client.connect(IPv4::localhost(), 50000);
+		}
+
+		Circle(Mouse::Pos(), 30).draw(Palette::Skyblue);
+
+		Circle(friendPos, 10).draw(Palette::Orange);
+	}
+}
+```
+
 ## 手書き文字認識
 ![手書き文字認識](resource/Handwriting.gif "手書き文字認識") 
 ```cpp
