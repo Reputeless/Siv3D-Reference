@@ -1,4 +1,4 @@
-﻿# 手動でのセットアップ
+﻿# セットアップ手順
 
 ## 1. インストール
 - <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(January2016).zip" target="_blank">Siv3D Package をダウンロード</a> し、適当なディレクトリに解凍します（あとで移動させることはできません）
