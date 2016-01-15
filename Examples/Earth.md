@@ -1,6 +1,6 @@
 ﻿# 地球
 
-## 地球 1
+## 地球
 ![地球](resource/Earth/Earth.gif "地球") 
 ```cpp
 # include <Siv3D.hpp>
