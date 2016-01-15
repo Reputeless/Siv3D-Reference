@@ -45,9 +45,15 @@
 |<a href="Examples/Xbox360Controller.md" target="_blank">![Xbox 360 コントローラ](Examples/resource/Xbox360Controller/thumbnail.png "Xbox 360 コントローラ")</a><br>Xbox 360 コントローラ|<a href="Examples/KinectV1.md" target="_blank">![Kinect v1](Examples/resource/KinectV1/thumbnail.png "Kinect v1")</a><br>Kinect v1|<a href="Examples/KinectV2.md" target="_blank">![Kinect v2](Examples/resource/KinectV2/thumbnail.png "Kinect v2")</a><br>Kinect v2|
 
 
-## プログラミングガイド
+## プログラミングガイド（順次アップデート）
 
-順次アップデートされます。
+### アプリ開発のテクニック
+|   テーマ   |   概要    |
+|:---------|:---------|
+|	スプラッシュウィンドウ	|	アプリ起動時に表示されるロゴ画像をカスタマイズする方法を解説します。	|
+|	ファイルの埋め込み	|	.exe ファイルに画像や音声。テキストファイルを埋め込む方法を解説します。	|
+
+### モジュール別リファレンス
 
 |   モジュール   |   機能概要    |
 |:---------|:---------|
