@@ -9,6 +9,10 @@
 - <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
 - <a href="Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
 
+## サポート
+- <a href="http://play-siv3d.hateblo.jp/entry/slack" target="_blank">ユーザーグループ Slack</a>  
+- <a href="http://siv3d.jp/bbs/patio.cgi" target="_blank">ユーザー掲示板</a>  
+
 ## 入門チュートリアル
 | | | |
 |:---------:|:---------:|:---------:|
