@@ -18,7 +18,7 @@
 -  プロジェクト名を入力して | OK | を押します
 
 - Main.cpp に以下のコードか用意されているので、ビルド・実行します
- - Main.cpp が見つからない場合、メニューの | 表示 | → | ソリューション エクスプローラー| で開くウィンドウの「ソースコード」を開いてください (<a href="resource/solutionexplorer.png" target="_blank">画像</a>)
+ - Main.cpp が見つからない場合、Visual Studio メニューの | 表示 | → | ソリューション エクスプローラー | からソリューションエクスプローラーを開き、「ソースコード」をクリックしてください (<a href="resource/solutionexplorer.png" target="_blank">画像</a>)
  
 ```cpp
 # include <Siv3D.hpp>
