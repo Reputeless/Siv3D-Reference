@@ -1,5 +1,71 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+## ベジェ曲線
+![ベジェ曲線](resource/Bezier.gif "ベジェ曲線")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Window::SetPos(770, 383);
+
+	const double speed = 2.0;
+	Rect rectA(100, 100, 100), rectB(300, 200, 100);
+	bool grabbedA = false, grabbedB = false;
+	CubicBezier bezier(Vec2(100, 400), Vec2(200, 400), Vec2(200, 100), Vec2(300, 100));
+	CubicBezierPath path(bezier);
+
+	while (System::Update())
+	{
+		if (rectA.leftClicked)
+		{
+			grabbedA = true;
+		}
+		else if (rectB.leftClicked)
+		{
+			grabbedB = true;
+		}
+
+		if (grabbedA)
+		{
+			rectA.moveBy(Mouse::Delta());
+		}
+		else if (grabbedB)
+		{
+			rectB.moveBy(Mouse::Delta());
+		}
+
+		if (Input::MouseL.released)
+		{
+			grabbedA = grabbedB = false;
+		}
+
+		bezier.p0 = (rectA.center.x < rectB.center.x ? (rectA.tr + rectA.br) : (rectA.tl + rectA.bl)) / 2;
+		bezier.p3 = (rectB.center.x < rectA.center.x ? (rectB.tr + rectB.br) : (rectB.tl + rectB.bl)) / 2;
+		bezier.p1.set(bezier.p3.x, bezier.p0.y);
+		bezier.p2.set(bezier.p0.x, bezier.p3.y);
+		path.set(bezier);
+
+		double r = path.advance(speed, 40);
+
+		if (r >= 1.0 || IsNaN(r))
+		{
+			path.set(r = 0.0);
+		}
+
+		bezier.draw(2);
+
+		RoundRect(rectA, 4).draw(Palette::Deepskyblue);
+		RoundRect(rectB, 4).draw(Palette::Deepskyblue);
+		
+		Circle(bezier.p0, 6).draw(Color(160, 200, 255, 200));
+		Circle(bezier.p3, 6).draw(Color(160, 200, 255, 200));
+
+		Circle(bezier.getPos(r), 10).draw(Palette::Orange);
+	}
+}
+```
+
 ## 手書き文字認識
 ![手書き文字認識](resource/Handwriting.gif "手書き文字認識") 
 ```cpp
@@ -121,4 +187,3 @@ void Main()
     }
 }
 ```
-
