@@ -16,3 +16,45 @@ void Main()
 	}
 }
 ```
+
+## using namespace s3d::Math を無効にする
+Siv3D.hpp をインクルードする前にマクロ `NO_MATH_USING` を定義すると、`using namespace s3d::Math` が無効になります。
+```cpp
+# define NO_MATH_USING
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Println(Math::Sin(Math::Pi));
+	
+	WaitKey();
+}
+```
+
+## using namespace ham を無効にする
+HamFramework.hpp をインクルードする前にマクロ `NO_HAM_USING` を定義すると、`using namespace ham` が無効になります。
+```cpp
+# include <Siv3D.hpp>
+# define NO_HAM_USING
+# include <HamFramework.hpp>
+
+using MyApp = ham::SceneManager<String>;
+
+struct Game : MyApp::Scene
+{
+	void update() {}
+
+	void draw() const {}
+};
+
+void Main()
+{
+	MyApp manager(ham::SceneManagerOption::ShowSceneName);
+	manager.add<Game>(L"Game");
+
+	while (System::Update())
+	{
+		manager.updateAndDraw();
+	}
+}
+```
