@@ -15,7 +15,7 @@ void Main()
 	{
 		for (auto p : step({ dots.width, dots.height }))
 		{
-			Rect rect(p * dotSize, dotSize, dotSize);
+			const Rect rect(p * dotSize, dotSize, dotSize);
 
 			if (rect.leftClicked)
 			{
