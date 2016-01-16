@@ -69,7 +69,7 @@
 |	ArchivedFileReader	|	アーカイブファイルからの読み込み	|
 |	Array	|	動的配列	|
 |	Arrow	|	矢印形（2D 図形）	|
-|	Asset	|	アセット管理	|
+|	<a href="Programming Guide/Asset.md" target="_blank">Asset</a>	|	アセット管理	|
 |	Base64	|	Base64	|
 |	BinaryReader	|	バイナリファイルの読み込み	|
 |	BinaryWriter	|	バイナリファイルの書き込み	|
