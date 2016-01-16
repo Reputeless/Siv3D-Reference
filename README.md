@@ -251,7 +251,7 @@
 |	TexturedQuad	|	四角形に貼り付けたテクスチャ	|
 |	Threading	|	マルチスレッド	|
 |	Time	|	時間	|
-|	TobiiEyeX	|	Tobii EyeX	|
+|	<a href="Programming Guide/TobiiEyeX.md" target="_blank">TobiiEyeX</a>	|	Tobii EyeX	|
 |	Touch	|	タッチ	|
 |	TransformedMesh	|	変換情報を持ったメッシュ	|
 |	Triangle	|	三角形（2D 図形）	|
