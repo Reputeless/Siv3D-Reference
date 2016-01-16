@@ -1,5 +1,77 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+
+## シリアライズ / デシリアライズ
+
+```cpp
+# include <Siv3D.hpp>
+
+struct Monster
+{
+	String name;
+
+	int32 id;
+
+	double size;
+
+	Array<int32> values;
+
+	// このようなメンバ関数を定義する
+	template <class Archive>
+	void serialize(Archive& archive)
+	{
+		archive(name, id, size, values);
+	}
+};
+
+void Main()
+{
+	const Monster monster = { L"Goblin", 123, 1.2, {10, 20, 30, 40} };
+	Serializer<BinaryWriter> writer(L"save.bin");
+	writer(monster);
+	writer.getWriter().close();
+
+	Deserializer<BinaryReader> reader(L"save.bin");
+	Monster m;
+	reader(m);
+
+	Println(m.name);
+	Println(m.id);
+	Println(m.size);
+	Println(m.values);
+
+	WaitKey();
+}
+```
+
+## Shape 型
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Array<Shape> shapes;
+	shapes.emplace_back(Circle(150, 100, 80));
+	shapes.emplace_back(Rect(350, 100, 200, 100));
+	shapes.emplace_back(Ellipse(150, 300, 100, 50));
+	shapes.emplace_back(Line(300, 300, 400, 350));
+
+	shapes[3] = Geometry2D::CreateStar(100, 0, { 450, 350 });
+
+	Println(shapes[0].type() == Shape::Type::Circle);
+	Println(shapes[3].typeName());
+
+	while (System::Update())
+	{
+		for (const auto& shape : shapes)
+		{
+			shape.draw(shape.mouseOver ? Palette::Red : Palette::Yellow);
+		}
+	}
+}
+```
+
 ## ベジェ曲線
 ![ベジェ曲線](resource/Bezier.gif "ベジェ曲線")  
 ```cpp
