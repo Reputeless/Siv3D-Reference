@@ -1,5 +1,4 @@
 ﻿# ApplicationUtility
-
 テキストや値を、画面に手軽に表示するためのユーティリティです。
 
 ## Print

@@ -1,5 +1,4 @@
 ﻿# Namespace
-
 ライブラリの名前空間の使用を設定します。
 
 ## using namespace s3d を無効にする
