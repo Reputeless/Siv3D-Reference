@@ -80,7 +80,7 @@
 |	ByteArray	|	読み込み用バッファ	|
 |	Camera	|	3D カメラ	|
 |	Char	|	文字	|
-|	CharacterSet	|	文字コード変換	|
+|	<a href="Programming Guide/CharacterSet.md" target="_blank">CharacterSet</a>	|	文字コード変換	|
 |	Circle	|	円（2D 図形）	|
 |	Circular	|	円座標	|
 |	Clipboard	|	クリップボード	|
