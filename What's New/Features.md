@@ -1,5 +1,68 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+## 数式処理
+![数式処理](resource/Calculator.gif "数式処理") 
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Graphics::SetBackground(Color(240));
+
+	const Font font(40);
+
+	String expression;
+
+	while (System::Update())
+	{
+		Input::GetCharsHelper(expression);
+
+		font(expression).draw(10, 10, Palette::Black);
+
+		if (const auto result = EvaluateOpt(expression))
+		{
+			font(result.value()).draw(10, 250, Palette::Black);
+		}
+	}
+}
+```
+
+## MIDI ファイルのノート情報の取得
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	if (const auto midiFile = Dialog::GetOpenMidi())
+	{
+		if (!Midi::Open(midiFile.value()))
+		{
+			return;
+		}
+	}
+	else
+	{
+		return;
+	}
+
+	const auto score = Midi::GetScore();
+
+	TextWriter writer(L"midi.txt");
+
+	int32 channel = 0;
+
+	for (const auto& notes : score)
+	{
+		writer.writeln(L"----------------------ch: {}----------------------"_fmt, channel++);
+
+		for (const auto& note : notes)
+		{
+			writer.writeln(L"note: {} start: {} length: {}"_fmt, note.noteNumber, note.startMillisec, note.lengthMillisec);
+		}
+	}
+}
+```
+
 
 ## シリアライズ / デシリアライズ
 

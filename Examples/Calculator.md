@@ -1,5 +1,5 @@
 ﻿# 電卓
-![電卓](resource/Calculator/Calculator.png "電卓") 
+![電卓](resource/Calculator/Calculator.gif "電卓") 
 ```cpp
 # include <Siv3D.hpp>
 
