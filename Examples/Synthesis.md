@@ -64,7 +64,7 @@ void Main()
 
 		for (size_t i = 0; i < count; ++i)
 		{
-			lines.point(i).set(i * (1.0 / s), 290 + wave[static_cast<int32>(i * s)].left / 200).draw();
+			lines.point(i).set(i * (1.0 / s), 290 + wave[static_cast<int32>(i * s)].left / 200);
 		}
 
 		Line(0, 290, 640, 290).draw(Color(0, 255, 0));
