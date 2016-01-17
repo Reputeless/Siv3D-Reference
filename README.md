@@ -48,7 +48,7 @@
 |<a href="Examples/DrawingSymmetry.md" target="_blank">![対称定規](Examples/resource/DrawingSymmetry/thumbnail.png "対称定規")</a><br>対称定規|<a href="Examples/AOBench.md" target="_blank">![aobench](Examples/resource/AOBench/thumbnail.png "aobench")</a><br>aobench|<a href="Examples/MIDIVisualizer.md" target="_blank">![MIDI ビジュアライザー](Examples/resource/MIDIVisualizer/thumbnail.png "MIDI ビジュアライザー")</a><br>MIDI ビジュアライザー|
 |<a href="Examples/Calculator.md" target="_blank">![電卓](Examples/resource/Calculator/thumbnail.png "電卓")</a><br>電卓|<a href="Examples/Handwriting.md" target="_blank">![手書き文字認識](Examples/resource/Handwriting/thumbnail.png "手書き文字認識")</a><br>手書き文字認識|<a href="Examples/Facedetection.md" target="_blank">![顔検出](Examples/resource/Facedetection/thumbnail.png "顔検出")</a><br>顔検出|
 |<a href="Examples/Xbox360Controller.md" target="_blank">![Xbox 360 コントローラ](Examples/resource/Xbox360Controller/thumbnail.png "Xbox 360 コントローラ")</a><br>Xbox 360 コントローラ|<a href="Examples/KinectV1.md" target="_blank">![Kinect v1](Examples/resource/KinectV1/thumbnail.png "Kinect v1")</a><br>Kinect v1|<a href="Examples/KinectV2.md" target="_blank">![Kinect v2](Examples/resource/KinectV2/thumbnail.png "Kinect v2")</a><br>Kinect v2|
-
+|<a href="Examples/Synthesis.md" target="_blank">![音声合成](Examples/resource/Synthesis/thumbnail.png "音声合成")</a><br>音声合成|![](Examples/resource/thumbnail.png "")<br>|![](Examples/resource/thumbnail.png "")<br>|
 
 ## プログラミングガイド（順次アップデート）
 
