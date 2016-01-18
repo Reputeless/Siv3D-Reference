@@ -1,5 +1,97 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+## RenderTexture
+### 2D
+![RenderTexture](resource/RenderTexture-2D.png "RenderTexture")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	const Texture texture(L"Example/Windmill.png");
+
+	RenderTexture rt(Size(640, 480) / 8, ColorF(1.0));
+
+	Graphics2D::SetRenderTarget(rt);
+
+	texture.scale(1.0 / 8).draw();
+
+	Graphics2D::SetRenderTarget(Graphics::GetSwapChainTexture());
+
+	while (System::Update())
+	{
+		Graphics2D::SetSamplerState(SamplerState::ClampPoint);
+
+		rt.scale(8).rotate(20_deg).draw();
+
+		Graphics2D::SetSamplerState(SamplerState::Default2D);
+	}
+}
+```
+
+### 3D
+![RenderTexture](resource/RenderTexture-3D.png "RenderTexture")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	const Font font(40);
+	String expression;
+
+	RenderTexture texture(1000, 200, Color(0, 0), TextureFormat::R8G8B8A8_Snorm);
+	const Mesh mesh(MeshData::PlaneXY(10, 2));
+	Graphics3D::SetLightForward(0, Light::None());
+	Graphics3D::SetAmbientLightForward(ColorF(1.0));
+
+	while (System::Update())
+	{
+		Graphics3D::FreeCamera();
+		Input::GetCharsHelper(expression);
+
+		texture.clear(ColorF(1.0, 0.05));
+		Graphics2D::SetRenderTarget(texture);
+
+		BlendState blend = BlendState::Default;
+		blend.opAlpha = BlendOp::Max;
+		Graphics2D::SetBlendState(blend);
+
+		font(expression).draw(10, 10);
+
+		if (const auto result = EvaluateOpt(expression))
+		{
+			font(L'=', result.value()).draw(10, 100);
+		}
+
+		Rect(texture.size).drawFrame(4);
+
+		Graphics2D::SetRenderTarget(Graphics::GetSwapChainTexture());
+		Graphics::Render2D();
+
+		mesh.translated(0, 1, -3).drawForward(texture, ColorF(0.2, 1.0, 0.5));
+
+		for (int32 x = -2; x <= 2; ++x)
+		{
+			Box(Vec3(x * 4, 0, 0), 2).draw();
+		}
+	}
+}
+```
+
+## ZIP の書き出し
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	ZIPWriter writer(L"Test.zip");
+	writer.addFile(L"Test/Test.txt", L"Example/Test.txt");
+	writer.addFile(L"Test/YomogiFont.ttf", L"Example/YomogiFont.ttf");
+	writer.addFile(L"Test/Windmill.png", L"Example/Windmill.png");
+}
+```
+
 ## 数式処理
 ![数式処理](resource/Calculator.gif "数式処理") 
 ```cpp
