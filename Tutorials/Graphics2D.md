@@ -280,8 +280,8 @@ void Main()
 ```
 
 ## 座標変換
-![XXXXXXXXXXXXx](resource/Graphics2D/transform.png "XXXXXXXXXXXXXXXXXXXXXXXX")  
-2D 描画に拡大縮小、回転、移動などの座標変換を `Mat3x2` の行列で一律で適用できます。
+![座標変換](resource/Graphics2D/transform.png "座標変換")  
+2D 描画に拡大縮小、回転、移動などの座標変換を、 `Mat3x2` の行列を使って一律に適用できます。  
 マウスの座標も同様に変換する場合は`Mouse::SetTrandform()` を使います。
 ```cpp
 # include <Siv3D.hpp>
