@@ -1,5 +1,124 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+## ムービー Texture
+### 2D
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	// ムービー (AVI, WMV)
+	VideoPlayer video(Dialog::GetOpenVideo().value_or(L""));
+
+	if (!video.isOpened())
+	{
+		MessageBox::Show(L"サポートしていない形式です。");
+		return;
+	}
+
+	Window::Resize(video.getSize());
+
+	video.play();
+
+	while (System::Update())
+	{
+		video.update();
+
+		video.getFrameTexture().draw();
+
+		Window::SetTitle(L"{:.1f} / {:.1f}"_fmt, video.getPosSec(), video.getLengthSec());
+	}
+}
+```
+
+### 3D
+![ムービー Texture](resource/VideoPlayer-3D.png "ムービー Texture")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	// ムービー (AVI, WMV)
+	VideoPlayer video(Dialog::GetOpenVideo().value_or(L""), true, true);
+
+	if (!video.isOpened())
+	{
+		MessageBox::Show(L"サポートしていない形式です。");
+		return;
+	}
+
+	const Mesh mesh(MeshData::PlaneXY(8.0, 8.0 * video.getSize().y / video.getSize().x));
+
+	video.play();
+
+	while (System::Update())
+	{
+		Graphics3D::FreeCamera();
+
+		video.update();
+
+		Box(Vec3(-8, 0, 0), 4).draw(video.getFrameTexture());
+
+		mesh.draw(video.getFrameTexture());
+
+		Sphere(Vec3(8, 0, 0), 2).draw(video.getFrameTexture());
+
+		Window::SetTitle(L"{:.1f} / {:.1f}"_fmt, video.getPosSec(), video.getLengthSec());
+	}
+}
+```
+
+## 暗号化データが正しく復号できたかの検証
+### メモリ
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Crypto2::EncryptFile(L"Example/Windmill.png", L"Encrypted.bin", AES128Key(111, 222, 333, 444));
+
+	Texture texture;
+
+	if (auto decrypted = Crypto2::DecryptFile(L"Encrypted.bin", AES128Key(999, 999, 999, 999)))
+	{
+		Println(L"OK 1");
+		texture = Texture(std::move(decrypted.value()));
+	}
+
+	if (auto decrypted = Crypto2::DecryptFile(L"Encrypted.bin", AES128Key(111, 222, 333, 444)))
+	{
+		Println(L"OK 2");
+		texture = Texture(std::move(decrypted.value()));
+	}
+
+	texture.draw();
+
+	WaitKey();
+}
+```
+
+### ファイル
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Crypto2::EncryptFile(L"Example/Windmill.png", L"Encrypted.bin", AES128Key(111, 222, 333, 444));
+
+	if (!Crypto2::DecryptFile(L"Encrypted.bin", L"Decrypted1.png", AES128Key(999, 999, 999, 999)))
+	{
+		Println(L"Failed");
+	}
+
+	if (Crypto2::DecryptFile(L"Encrypted.bin", L"Decrypted2.png", AES128Key(111, 222, 333, 444)))
+	{
+		Println(L"OK");
+	}
+
+	WaitKey();
+}
+```
+
 ## RenderTexture
 ### 2D
 ![RenderTexture](resource/RenderTexture-2D.png "RenderTexture")  
