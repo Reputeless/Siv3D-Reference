@@ -15,9 +15,9 @@
 
 - | ▼テンプレート | → | ▼Visual C++ | の一覧にある | Siv3D(January2016) | を選択します
 
--  プロジェクト名を入力して | OK | を押します　(<a href="Troubleshooting" target="_blank">※作成に失敗する場合</a>) 
+-  プロジェクト名を入力して | OK | を押します　(<a href="Troubleshooting.md" target="_blank">※作成に失敗する場合</a>) 
 
-- Main.cpp に以下のコードか用意されているので、ビルド・実行します　(<a href="Troubleshooting" target="_blank">※Main.cpp が見つからない、ビルドに失敗する場合</a>) 
+- Main.cpp に以下のコードか用意されているので、ビルド・実行します　(<a href="Troubleshooting.md" target="_blank">※Main.cpp が見つからない、ビルドに失敗する場合</a>) 
  
 ```cpp
 # include <Siv3D.hpp>
