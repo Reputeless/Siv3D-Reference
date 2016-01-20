@@ -88,7 +88,7 @@
 |	CommandLine	|	コマンドライン	|
 |	Compression	|	Deflate によるデータの圧縮・展開	|
 |	Cone	|	円錐（3D 形状）	|
-|	Console	|	コンソールウィンドウ	|
+|	<a href="Programming Guide/Console.md" target="_blank">Console</a>	|	コンソールウィンドウ	|
 |	ConstantBuffer	|	シェーダの定数バッファ	|
 |	Crypto	|	AES128 による暗号化	|
 |	CSVReader	|	CSV ファイルの読み込み	|
