@@ -112,7 +112,7 @@
 |	DynamicTexture	|	動的テクスチャ	|
 |	Easing	|	イージング関数	|
 |	EasingController	|	イージング ユーティリティ	|
-|	Effect	|	エフェクト	|
+|	<a href="Programming Guide/Effect.md" target="_blank">Effect</a>	|	エフェクト	|
 |	Ellipse	|	楕円（2D 図形）	|
 |	EventTimer	|	イベント付きストップウォッチ	|
 |	ExpressionParser	|	数式パーサー	|
