@@ -96,7 +96,7 @@ void Main()
 {
 	while (System::Update())
 	{
-		if (Window::ClientRect().leftClicked)
+		if (Input::MouseL.clicked)
 		{
 			Cursor::SetPos(Window::Center());
 		}
