@@ -94,7 +94,7 @@
 |	CSVReader	|	CSV ファイルの読み込み	|
 |	CSVWriter	|	CSV ファイルの書き出し	|
 |	CubicBezier	|	3 次ベジェ曲線	|
-|	Cursor	|	カーソル	|
+|	<a href="Programming Guide/Cursor.md" target="_blank">Cursor</a>	|	カーソル	|
 |	CustomColor	|	カスタムカラーフォーマット	|
 |	CustomImage	|	カスタムカラーフォーマットの画像	|
 |	Cylinder	|	円柱（3D 形状）	|
