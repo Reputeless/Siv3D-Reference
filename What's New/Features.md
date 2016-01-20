@@ -1,5 +1,82 @@
 ﻿# Siv3D January 2016 おもな新機能サンプル (随時追加予定）
 
+## 頂点シェーダによる高速な 2D 形状・パーティクル生成
+![頂点シェーダによる高速な 2D 形状・パーティクル生成](resource/Wave2DPointSprites.png "頂点シェーダによる高速な 2D 形状・パーティクル生成")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	Graphics::SetBackground(Palette::White);
+	const Texture texture(L"Example/siv3d-kun.png");
+	const VertexShader vs(L"Example/Shaders/Wave2DPointSprites.hlsl");
+
+	if (!vs)
+	{
+		return;
+	}
+
+	ConstantBuffer<Float4> cb;
+
+	float t = 0.0f;
+
+	while (System::Update())
+	{
+		texture.draw();
+
+		cb->set(Mouse::Pos().x / 10000.0f, Mouse::Pos().y / 5.0f, t += 0.05f, 0);
+		
+		Graphics2D::SetConstant(ShaderStage::Vertex, 1, cb);
+
+		Graphics2D::BeginVS(vs);
+		
+		// 128 * 4 頂点を頂点シェーダで生成して描画（要 カスタム頂点シェーダ）
+		Graphics2D::DrawPointSprites(128);
+		
+		Graphics2D::EndVS();
+	}
+}
+```
+
+## 3D 線分の描画
+![3D 線分の描画](resource/Line3D.png "3D 線分の描画")  
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	GUI gui(GUIStyle::Default);
+	gui.add(GUIText::Create(L"AntialiasedLine3D"));
+	gui.add(L"AA", GUIToggleSwitch::Create(L"Off", L"On", true));
+
+	while (System::Update())
+	{
+		Graphics3D::FreeCamera();
+
+		if (gui.toggleSwitch(L"AA").isRight)
+		{
+			Graphics3D::SetRasterizerStateForward(RasterizerState::AntialiasedLine3D);
+		}
+
+		for (int z = -5; z <= 5; ++z)
+		{
+			Line3D(Vec3(-50, 0, z * 10), Vec3(50, 0, z * 10)).drawForward();
+		}
+
+		for (int x = -5; x <= 5; ++x)
+		{
+			Line3D(Vec3(x * 10, 0, -50), Vec3(x * 10, 0, 50)).drawForward();
+		}
+
+		Line3D(Vec3(0, -50, 0), Vec3(0, 50, 0)).drawForward(Color(0, 255, 0));
+
+		Graphics3D::SetRasterizerStateForward(RasterizerState::Default3D);
+
+		Sphere(8).draw(Palette::Orange);
+	}
+}
+```
+
 ## ムービー Texture
 ### 2D
 ```cpp
