@@ -167,7 +167,7 @@
 |	<a href="Programming Guide/Headers/Siv3D/KinectV1.hpp" target="_blank">KinectV1</a>	|	Kinect v1	|
 |	<a href="Programming Guide/Headers/Siv3D/KinectV2.hpp" target="_blank">KinectV2</a>	|	Kinect v2	|
 |	<a href="Programming Guide/Headers/Siv3D/KineticTypography.hpp" target="_blank">KineticTypography</a>	|	キネティックタイポグラフィ	|
-|	LeapMotion	|	Leap Motion	|
+|	<a href="Programming Guide/Headers/Siv3DAddon/LeapMotion.hpp" target="_blank">LeapMotion</a>	|	Leap Motion	|
 |	<a href="Programming Guide/Headers/Siv3D/Lerp.hpp" target="_blank">Lerp</a>	|	線形補間	|
 |	<a href="Programming Guide/Headers/Siv3D/Light.hpp" target="_blank">Light</a>	|	ライティングの設定（3D 描画）	|
 |	<a href="Programming Guide/Headers/Siv3D/Line.hpp" target="_blank">Line</a>	|	線分（2D 図形）	|
@@ -220,7 +220,7 @@
 |	<a href="Programming Guide/Headers/Siv3D/RNG.hpp" target="_blank">RNG</a>	|	乱数生成エンジン	|
 |	<a href="Programming Guide/Headers/Siv3D/RoundRect.hpp" target="_blank">RoundRect</a>	|	角丸長方形（2D 図形）	|
 |	<a href="Programming Guide/Headers/Siv3D/SamplerState.hpp" target="_blank">SamplerState</a>	|	サンプラーステート	|
-|	SceneManager	|	シーン管理	|
+|	<a href="Programming Guide/Headers/HamFramework/SceneManager.hpp" target="_blank">SceneManager</a>	|	シーン管理	|
 |	<a href="Programming Guide/Headers/Siv3D/ScreenCapture.hpp" target="_blank">ScreenCapture</a>	|	スクリーンショット	|
 |	<a href="Programming Guide/Headers/Siv3D/Serial.hpp" target="_blank">Serial</a>	|	シリアル通信	|
 |	<a href="Programming Guide/Headers/Siv3D/Serialization.hpp" target="_blank">Serialization</a>	|	シリアライゼーション	|
