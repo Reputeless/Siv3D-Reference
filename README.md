@@ -1,19 +1,19 @@
 ﻿# Siv3D リファレンス | January 2016
 > 一部の実行環境で Siv3D January 2016 アプリの起動時にロゴ表示でクラッシュすることがあった問題を修正しました。現在配布している Siv3D Package は修正を適用しています。1 月 15 日 23:00 以前にインストールした方は差し替えを推奨します。
 
-## Siv3D January 2016 の新機能
+#### Siv3D January 2016 の新機能
 - <a href="What's New/ReleaseNotes.md" target="_blank">リリースノート</a>  
 - <a href="What's New/Features.md" target="_blank">新機能サンプル</a>  
 
-## インストール方法
+#### インストール方法
 - <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
 - <a href="Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
 
-## サポート
+#### サポート
 - <a href="http://play-siv3d.hateblo.jp/entry/slack" target="_blank">ユーザーグループ Slack</a>  
 - <a href="http://siv3d.jp/bbs/patio.cgi" target="_blank">ユーザー掲示板</a>  
 
-## 入門チュートリアル
+### 入門チュートリアル
 | | | |
 |:---------:|:---------:|:---------:|
 |<a href="Tutorials/Getting-started-with-siv3d.md" target="_blank">![1. Siv3D の基本](Tutorials/resource/Getting-started-with-siv3d/thumbnail.png "1. Siv3D の基本")</a><br>1. Siv3D の基本|<a href="Tutorials/Draw-shape.md" target="_blank">![2. 図形を描く](Tutorials/resource/Draw-shape/thumbnail.png "2. 図形を描く")</a><br>2. 図形を描く|<a href="Tutorials/Draw-texture.md" target="_blank">![3. テクスチャを描く](Tutorials/resource/Draw-texture/thumbnail.jpg "3. テクスチャを描く")</a><br>3. テクスチャを描く|
@@ -28,7 +28,7 @@
 |<a href="Tutorials/Graphics2D.md" target="_blank">![28. 2D のレンダーステート](Tutorials/resource/Graphics2D/thumbnail.jpg "28. 2D のレンダーステート")</a><br>28. 2D のレンダーステート|<a href="Tutorials/Graphics3D.md" target="_blank">![29. 3D のレンダーステート](Tutorials/resource/Graphics3D/thumbnail.jpg "29. 3D のレンダーステート")</a><br>29. 3D のレンダーステート|<a href="Tutorials/Particle.md" target="_blank">![30. パーティクル](Tutorials/resource/Particle/thumbnail.jpg "30. パーティクル")</a><br>30. パーティクル|
 |<a href="Tutorials/Screen-capture.md" target="_blank">![31. スクリーンショット](Tutorials/resource/Screen-capture/thumbnail.jpg "31. スクリーンショット")</a><br>31. スクリーンショット|<a href="Tutorials/Release.md" target="_blank">![32. アプリケーションの公開](Tutorials/resource/Release/thumbnail.jpg "32. アプリケーションの公開")</a><br>32. アプリケーションの公開|<a href="Tutorials/Learn.md" target="_blank">![番外編：さらに学ぶには](Tutorials/resource/Learn/thumbnail.png "番外編：さらに学ぶには")</a><br>番外編：さらに学ぶには|
 
-## サンプル集
+### サンプル集
 | | | |
 |:---------:|:---------:|:---------:|
 |<a href="Examples/Sketch.md" target="_blank">![スケッチブック](Examples/resource/Sketch/thumbnail.jpg "スケッチブック")</a><br>スケッチブック|<a href="Examples/ImageViewer.md" target="_blank">![画像ビューア](Examples/resource/ImageViewer/thumbnail.jpg "画像ビューア")</a><br>画像ビューア|<a href="Examples/AudioSpectrum.md" target="_blank">![オーディオスペクトラム](Examples/resource/AudioSpectrum/thumbnail.jpg "オーディオスペクトラム")</a><br>オーディオスペクトラム|
@@ -50,15 +50,15 @@
 |<a href="Examples/Xbox360Controller.md" target="_blank">![Xbox 360 コントローラ](Examples/resource/Xbox360Controller/thumbnail.jpg "Xbox 360 コントローラ")</a><br>Xbox 360 コントローラ|<a href="Examples/KinectV1.md" target="_blank">![Kinect v1](Examples/resource/KinectV1/thumbnail.jpg "Kinect v1")</a><br>Kinect v1|<a href="Examples/KinectV2.md" target="_blank">![Kinect v2](Examples/resource/KinectV2/thumbnail.jpg "Kinect v2")</a><br>Kinect v2|
 |<a href="Examples/Synthesis.md" target="_blank">![音声合成](Examples/resource/Synthesis/thumbnail.jpg "音声合成")</a><br>音声合成|![](Examples/resource/thumbnail.jpg "")<br>|![](Examples/resource/thumbnail.jpg "")<br>|
 
-## プログラミングガイド（順次アップデート）
+### プログラミングガイド（順次アップデート）
 
-### アプリ開発のテクニック
+#### アプリ開発のテクニック
 |   テーマ   |   概要    |
 |:---------|:---------|
 |	<a href="Programming Guide/Splash.md" target="_blank">スプラッシュウィンドウ</a>	|	アプリ起動時に表示されるロゴ画像をカスタマイズする方法	|
 |	<a href="Programming Guide/Resource.md" target="_blank">ファイルの埋め込み</a>	|	画像や音声、テキストファイルを .exe ファイルに埋め込む方法	|
 
-### モジュール別リファレンス
+#### モジュール別リファレンス
 
 |   モジュール   |   機能概要    |
 |:---------|:---------|
