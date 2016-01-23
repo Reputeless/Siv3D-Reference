@@ -1406,7 +1406,7 @@ namespace s3d
 		/// str は NULL 終端されている必要があります。
 		/// </remarks>
 		/// <returns>
-		/// 比較結果。等しければ 0, 小さければ <0, 大きければ >0
+		/// 比較結果。等しければ 0, 小さければ &lt;0, 大きければ &gt;0
 		/// </returns>
 		int32 compare(const wchar* str) const
 		{
