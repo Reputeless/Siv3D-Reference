@@ -17,7 +17,8 @@
 - 仕様変更
  -  
  
- ## Planned for Siv3D February 2016
+  
+## Planned for Siv3D February 2016
 - 32bit/64bit 両対応  
 - パイプサーバー  
 - Mesh::Create~ で作成できる 3D 形状を追加  
@@ -28,4 +29,4 @@
 - ZIPReader のバグ修正  
   
 
- ## Planned for Later
+## Planned for Later
