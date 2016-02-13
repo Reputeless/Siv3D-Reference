@@ -19,11 +19,13 @@
 - 仕様変更
  -  
  
+- その他
+ - libwebp のバージョンを 0.4.3 から 0.5.0 に更新
   
+
 ## Planned for Siv3D February 2016
 - 32bit/64bit 両対応
 - Mesh::Create~ で作成できる 3D 形状を追加
-- WebP の更新
 - JSON, CSV のファイルトラッキングのオプション
 - ムービーのピクセルアスペクト比取得
 - ZIPReader のバグ修正
