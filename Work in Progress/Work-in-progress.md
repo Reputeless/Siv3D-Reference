@@ -13,6 +13,7 @@
  - CustomImage から DynamicTexture を初期化できなかったバグを修正  
  - Wave::Wave(const SecondsF&) のバグを修正  
  - Box2D の lib のパスが誤っていた問題を修正 (Thanks tsuzu)  
+ - VideoPlayer::operaotr bool() が定義されていなかったバグを修正
 
 - 仕様変更
  -  
