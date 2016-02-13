@@ -2,6 +2,8 @@
 
 ## Siv3D February 2016 
 - 新機能
+ - Line::reversed()
+ - Line3D::reversed() 
  -  
 - パフォーマンス改善
  -  
@@ -19,9 +21,6 @@
  - WebP の更新
  - JSON, CSV のファイルトラッキングのオプション
  - BezierPath のデフォルトコンストラクタ
- - Line::reversed()
- - Line3D::reversed()
- - Point * Vec2
  - ムービーのピクセルアスペクト比取得
  - ZIPReader のバグ修正
   
