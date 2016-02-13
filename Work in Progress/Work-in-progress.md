@@ -24,7 +24,6 @@
 - Mesh::Create~ で作成できる 3D 形状を追加  
 - WebP の更新  
 - JSON, CSV のファイルトラッキングのオプション  
-- BezierPath のデフォルトコンストラクタ  
 - ムービーのピクセルアスペクト比取得  
 - ZIPReader のバグ修正  
   
