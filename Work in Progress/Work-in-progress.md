@@ -3,8 +3,7 @@
 ## Siv3D February 2016 
 - 新機能
  - Line::reversed()
- - Line3D::reversed() 
- -  
+ - Line3D::reversed()
 - パフォーマンス改善
  -  
 - バグ修正
