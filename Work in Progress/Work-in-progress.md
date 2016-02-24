@@ -5,6 +5,7 @@
  - <b>32bit/64bit 両対応</b>
  - <b>パイプサーバー</b> (Thanks zenito9970)
  - <b>Forward Rendering での Viewport 設定</b>
+ - <b>MeshData で作成できる 3D 形状を追加</b>
  - Line::reversed()
  - Line3D::reversed()
  - QuadraticBezierPath と CubicBezierPath にデフォルトコンストラクタを追加
@@ -26,10 +27,8 @@
   
 
 ## Planned for Siv3D February 2016
-- Mesh::Create~ で作成できる 3D 形状を追加
-- JSON, CSV のファイルトラッキングのオプション
-- ムービーのピクセルアスペクト比取得
 - ZIPReader のバグ修正
+- その他バグ修正
   
 
 ## Planned for Later
