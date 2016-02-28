@@ -1,6 +1,4 @@
 ﻿# Siv3D リファレンス | January 2016
-> 一部の実行環境で Siv3D January 2016 アプリの起動時にロゴ表示でクラッシュすることがあった問題を修正しました。現在配布している Siv3D Package は修正を適用しています。1 月 15 日 23:00 以前にインストールした方は差し替えを推奨します。
-
 - <a href="http://play-siv3d.hateblo.jp/" target="_blank">Siv3D とは</a>  
 - <a href="What's New/ReleaseNotes.md" target="_blank">Siv3D January 2016 リリースノート</a>  
 - <a href="What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
