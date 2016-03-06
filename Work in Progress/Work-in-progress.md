@@ -1,6 +1,6 @@
 ﻿# 開発中の機能
 
-## Siv3D February 2016 
+## Siv3D March 2016 
 - 新機能
  - <b>32bit/64bit 両対応</b>
  - <b>パイプサーバー</b> (Thanks zenito9970)
@@ -20,7 +20,7 @@
  - VideoPlayer::operaotr bool() が定義されていなかったバグを修正
 
 - 仕様変更
- -  
+ -  y 座標のみを引数にとる Font::drawCenter(), regionCenter(), DrawableString::drawCenter(), regionCenter() を廃止
  
 - その他
  - libwebp のバージョンを 0.4.3 から 0.5.0 に更新
