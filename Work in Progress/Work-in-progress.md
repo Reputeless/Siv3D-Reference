@@ -9,10 +9,7 @@
  - Line::reversed()
  - Line3D::reversed()
  - QuadraticBezierPath と CubicBezierPath にデフォルトコンストラクタを追加
- 
-- パフォーマンス改善
- -  
- 
+
 - バグ修正
  - CustomImage から DynamicTexture を初期化できなかったバグを修正
  - Wave::Wave(const SecondsF&) のバグを修正
@@ -25,9 +22,7 @@
 - その他
  - libwebp のバージョンを 0.4.3 から 0.5.0 に更新
   
-
 ## Planned for Siv3D February 2016
-- ZIPReader のバグ修正
 - その他バグ修正
   
 
