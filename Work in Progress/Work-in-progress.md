@@ -22,7 +22,7 @@
 - その他
  - libwebp のバージョンを 0.4.3 から 0.5.0 に更新
   
-## Planned for Siv3D February 2016
+## Planned for Siv3D March 2016
 - その他バグ修正
   
 
