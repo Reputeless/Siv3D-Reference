@@ -16,6 +16,7 @@
  - Box2D の lib のパスが誤っていた問題を修正 (Thanks tsuzu)
  - VideoPlayer::operaotr bool() が定義されていなかったバグを修正
  - Asset の UnregisterByTag で assert が発生するバグを修正 (Thanks rinifisu)
+ - ZIPReader::extractAll() のバグを修正 (Thanks asachun)
 
 - 仕様変更
  -  y 座標のみを引数にとる Font::drawCenter(), regionCenter(), DrawableString::drawCenter(), regionCenter() を廃止
