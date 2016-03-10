@@ -6,8 +6,8 @@
  - <b>パイプサーバー</b> (Thanks zenito9970)
  - <b>Forward Rendering での Viewport 設定</b>
  - <b>MeshData で作成できる 3D 形状を追加</b>
- - Line::reversed()
- - Line3D::reversed()
+ - Line::reversed() (Thanks pctg_x8)
+ - Line3D::reversed() (Thanks pctg_x8)
  - QuadraticBezierPath と CubicBezierPath にデフォルトコンストラクタを追加
 
 - バグ修正
