@@ -2,11 +2,11 @@
 ## 1. Siv3D のインストール
 - <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(March2016).zip" target="_blank">Siv3D Package をダウンロード</a>し、適当なディレクトリに解凍します（インストール後はフォルダを移動できません）
 
-- Siv3D_Install.wsf を実行して、数秒待ちます。
+- Siv3D_Install.wsf を実行して、数秒待ちます　(<a href="Troubleshooting.md" target="_blank">※実行できない場合</a>) 
 
-![Siv3D のインストール](resource/installer.png "Siv3D のインストール")  
+![Siv3D のインストール](resource/install.png "Siv3D のインストール")  
 - この画面が表示されたらインストールは完了です。
- - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md">手動でのインストール</a> を行ってください
+ - 自動インストールでエラーが発生した場合は <a href="Manual-setup.md">手動でのインストール</a> を試してください
 
 ## 2. プロジェクトの作成
 - Visual Studio 2015 を起動し、メニューから | ファイル | → | 新規作成 | → | プロジェクト | を選択します

@@ -1,5 +1,8 @@
 ﻿# インストール時のトラブルシューティング
 
+### ◆ Siv3D_Install.wsf を実行できない
+Siv3D_Install.wsf を右クリックし、| プログラムから開く | から | Microsoft Windows Based Script Host | を選択するか、コマンドプロンプトから Siv3D_Install.wsf を実行してください。
+
 ### ◆ プロジェクトを作成すると「HRESULT からの例外」と表示されて作成に失敗する
 #### 原因: お使いの Visual Studio に C++ の開発環境がインストールされていません。
 Visual Studio Community はインストール時に選択しない限り C++ の開発環境がインストールされません。  
