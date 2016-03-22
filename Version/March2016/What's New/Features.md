@@ -1,4 +1,4 @@
-﻿# Siv3D March 2016 おもな新機能サンプル）
+﻿# Siv3D March 2016 おもな新機能サンプル
 
 ## パイプサーバー
 ![パイプサーバー](resource/PipeServer.png "パイプサーバー")  
