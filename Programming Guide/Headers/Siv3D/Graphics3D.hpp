@@ -155,6 +155,10 @@ namespace s3d
 		/// </returns>
 		Ray ToRay(const Vec2& screenPos);
 
+		void SetViewportForward(const Rect& viewport);
+
+		Rect GetViewportForward();
+
 		////////////////////////////////////////////////////////////////
 		//
 		//		レンダーステート

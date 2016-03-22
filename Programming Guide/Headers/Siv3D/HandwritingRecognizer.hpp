@@ -11,6 +11,7 @@
 # pragma once
 # include <memory>
 # include "String.hpp"
+# include "PointVector.hpp"
 
 namespace s3d
 {

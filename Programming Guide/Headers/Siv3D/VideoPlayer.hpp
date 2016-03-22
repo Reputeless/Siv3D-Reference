@@ -43,7 +43,10 @@ namespace s3d
 
 		void close();
 
-		explicit operator bool() const;
+		explicit operator bool() const
+		{
+			return isOpened();
+		}
 
 		bool isOpened() const;
 

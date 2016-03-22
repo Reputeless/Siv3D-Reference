@@ -42,8 +42,8 @@ namespace s3d
 		explicit DynamicTexture(const Image& image, TextureFormat format = TextureFormat::R8G8B8A8_Unorm);
 
 		template <class Type>
-		explicit DynamicTexture(const CustomImage<Type>& image) 
-			: Texture(image.width, image.height, image.data(), image.dataSize, image.stride, CustomImage<Type>::Format, Texture::_modeDyanmic()) {}
+		explicit DynamicTexture(const CustomImage<Type>& image)
+			: Texture(image.width, image.height, image.data(), image.memorySize(), image.stride, CustomImage<Type>::Format, Texture::_dyanmic()) {}
 
 		bool fill(const Color& color);
 
@@ -60,11 +60,11 @@ namespace s3d
 		/// 動的テクスチャの更新か作成に成功した場合 true, それ以外の場合は false
 		/// </returns>
 		bool fill(const Image& image);
-		
+
 		template <class Type>
 		bool fill(const CustomImage<Type>& image)
 		{
-			return fill(image.width, image.height, image.data(), image.dataSize, image.stride, CustomImage<Type>::Format, true);
+			return fill(image.width, image.height, image.data(), image.memorySize(), image.stride, CustomImage<Type>::Format, true);
 		}
 
 		bool fill(const Image& image, const Rect& rect);
@@ -89,7 +89,7 @@ namespace s3d
 		template <class Type>
 		bool tryFill(const CustomImage<Type>& image)
 		{
-			return fill(image.width, image.height, image.data(), image.dataSize, image.stride, CustomImage<Type>::Format, false);
+			return fill(image.width, image.height, image.data(), image.memorySize(), image.stride, CustomImage<Type>::Format, false);
 		}
 
 		bool tryFill(const Image& image, const Rect& rect);

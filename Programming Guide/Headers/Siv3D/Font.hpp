@@ -412,7 +412,7 @@ namespace s3d
 		RectF
 			drawCenter(
 			const String& text,
-			int y,
+			double y,
 			const Color& color = Palette::White,
 			double lineHeight = 1.0
 			) const;

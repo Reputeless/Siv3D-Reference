@@ -428,7 +428,7 @@ namespace s3d
 		/// </param>
 		/// <returns>
 		/// 指定した文字から始まる場合 true, それ以外の場合は false
-        /// </returns>
+		/// </returns>
 		bool startsWith(wchar ch) const { return !empty() && ch == front(); }
 
 		/// <summary>

@@ -13,6 +13,7 @@
 # include "Fwd.hpp"
 # include "Array.hpp"
 # include "PointVector.hpp"
+# include "AR.hpp"
 # include "String.hpp"
 
 namespace s3d

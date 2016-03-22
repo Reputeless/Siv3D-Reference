@@ -1,11 +1,15 @@
-﻿# Siv3D リファレンス | January 2016
+﻿# Siv3D リファレンス | March 2016
 - <a href="http://play-siv3d.hateblo.jp/" target="_blank">Siv3D とは</a>  
-- <a href="Version/January2016/What's New/ReleaseNotes.md" target="_blank">Siv3D January 2016 リリースノート</a>  
-- <a href="Version/January2016/What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
+- <a href="Version/March2016/What's New/Features.md" target="_blank">Siv3D March 2016 の新機能サンプル</a>  
+- <a href="Version/March2016/What's New/ReleaseNotes.md" target="_blank">Siv3D March 2016 リリースノート</a>  
 
 #### インストール方法
-- <a href="Version/January2016/Install/System-requirements.md" target="_blank">動作環境</a>  
-- <a href="Version/January2016/Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
+- <a href="Version/March2016/Install/System-requirements.md" target="_blank">動作環境</a>  
+- <a href="Version/March2016/Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
+
+#### 前バージョン
+- <a href="Version/January2016/What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
+- <a href="Version/January2016/What's New/ReleaseNotes.md" target="_blank">Siv3D January 2016 リリースノート</a>  
 
 #### サポート・その他
 - <a href="http://play-siv3d.hateblo.jp/entry/slack" target="_blank">ユーザーグループ Slack</a>  
@@ -196,6 +200,7 @@
 |	<a href="Programming Guide/Headers/Siv3D/Particle.hpp" target="_blank">Particle</a>	|	3D パーティクル	|
 |	<a href="Programming Guide/Headers/Siv3D/Pentablet.hpp" target="_blank">Pentablet</a>	|	ペンタブレット	|
 |	<a href="Programming Guide/Headers/Siv3D/PerlinNoise.hpp" target="_blank">PerlinNoise</a>	|	Perlin Noise	|
+|	<a href="Programming Guide/Headers/Siv3D/PipeServer.hpp" target="_blank">PipeServer</a>	|	パイプ通信	|
 |	<a href="Programming Guide/Headers/Siv3D/PixelShader.hpp" target="_blank">PixelShader</a>	|	ピクセルシェーダ	|
 |	<a href="Programming Guide/Headers/Siv3D/Plane.hpp" target="_blank">Plane</a>	|	平面（3D 形状）	|
 |	<a href="Programming Guide/Headers/Siv3D/Point.hpp" target="_blank">Point</a>	|	点、またはサイズ（2D 図形）	|

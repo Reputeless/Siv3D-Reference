@@ -223,7 +223,7 @@ namespace s3d
 		/// </returns>
 		size_t write(const ByteArray& src)
 		{
-			return src.size() ? write(src.data(), src.size()) : 0;
+			return src.size() ? write(src.data(), static_cast<size_t>(src.size())) : 0;
 		}
 
 		/// <summary>

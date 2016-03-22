@@ -74,6 +74,8 @@ namespace s3d
 
 		constexpr Point vector() const;
 
+		constexpr LineInt reversed() const;
+
 		double length() const;
 
 		constexpr double lengthSq() const;
@@ -192,7 +194,9 @@ namespace s3d
 
 		constexpr Line operator - (const Vec2& v) const;
 
-		constexpr Vec2 vector() const { return{ end.x - begin.x, end.y - begin.y }; }
+		constexpr Vec2 vector() const;
+
+		constexpr Line reversed() const;
 
 		double length() const;
 

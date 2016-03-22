@@ -73,7 +73,9 @@ namespace s3d
 
 	public:
 
-		CubicBezierPath(const CubicBezier& bezier)
+		CubicBezierPath() = default;
+
+		explicit CubicBezierPath(const CubicBezier& bezier)
 		{
 			set(bezier);
 		}

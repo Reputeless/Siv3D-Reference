@@ -229,6 +229,20 @@ namespace s3d
 		/// </returns>
 		static MeshData Polygon(const s3d::Polygon& polygon, double height, const Vec2& uvScale, const Vec2& uvOffset, const Vec2& uvY = { 1.0, 1.0 });
 	
+
+		static MeshData Torus(double size, double tubeRadius, int32 slices = 32, int32 stacks = 32);
+
+		static MeshData Hemisphere(double radius, int32 slices = 20, int32 stacks = 20);
+
+		static MeshData Dodecahedron(double size);
+
+		static MeshData Tetrahedron(double size);
+
+		static MeshData Icosahedron(double size);
+
+		static MeshData Rock(double size, uint32 seed, int32 nsubdivisions = 2);
+
+
 		static MeshData Grid(double size, int32 grid, const Vec2& uvScale = { 1, 1 }, const Vec2& uvOffset = { 0, 0 })
 		{
 			return Grid({ size, size }, grid, grid, uvScale, uvOffset);

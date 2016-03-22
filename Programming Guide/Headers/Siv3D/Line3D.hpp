@@ -15,9 +15,7 @@ namespace s3d
 {
 	struct Line3D
 	{
-		Vec3 begin;
-
-		Vec3 end;
+		Vec3 begin, end;
 
 		Line3D() = default;
 
@@ -30,9 +28,11 @@ namespace s3d
 		Line3D& moveBy(const Vec3& v) { begin.moveBy(v); end.moveBy(v); return *this; }
 
 
-		Line3D movedBy(double _x, double _y, double _z) const { return movedBy({ _x, _y, _z }); }
+		constexpr Line3D movedBy(double _x, double _y, double _z) const { return movedBy({ _x, _y, _z }); }
 
-		Line3D movedBy(const Vec3& v) const { return{ begin.movedBy(v), end.movedBy(v) }; }
+		constexpr Line3D movedBy(const Vec3& v) const { return{ begin.movedBy(v), end.movedBy(v) }; }
+
+		constexpr Line3D reversed() const { return{ end, begin }; }
 
 
 		void drawForward(const Color& color = Palette::White) const;

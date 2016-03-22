@@ -1869,7 +1869,7 @@ namespace s3d
 		/// <returns>
 		/// 分割された文字列
 		/// </returns>
-		Array<String> split(wchar ch) const;
+		std::vector<String> split(wchar ch) const;
 	};
 
 	/// <summary>

@@ -70,7 +70,9 @@ namespace s3d
 
 	public:
 
-		QuadraticBezierPath(const QuadraticBezier& bezier)
+		QuadraticBezierPath() = default;
+
+		explicit QuadraticBezierPath(const QuadraticBezier& bezier)
 		{
 			set(bezier);
 		}
@@ -87,9 +89,9 @@ namespace s3d
 			m_t = t;
 		}
 
-		double advance(double distance, int quality = 8)
+		double advance(double distance, int32 quality = 8)
 		{
-			for (int i = 0; i < quality; ++i)
+			for (int32 i = 0; i < quality; ++i)
 			{
 				m_t = m_t + (distance/quality) / (m_t * m_v1 + m_v2).length();
 			}
