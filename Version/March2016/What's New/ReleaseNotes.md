@@ -18,7 +18,7 @@
  - ZIPReader::extractAll() のバグを修正 (Thanks asachun)
 
 - 仕様変更
- -  y 座標のみを引数にとる Font::drawCenter(), regionCenter(), DrawableString::drawCenter(), regionCenter() を廃止
+ -  Font::drawCenter() の引数を修正
  
 - その他
  - libwebp のバージョンを 0.4.3 から 0.5.0 に更新
