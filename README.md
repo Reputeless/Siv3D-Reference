@@ -4,8 +4,8 @@
 - <a href="Version/January2016/What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
 
 #### インストール方法
-- <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
-- <a href="Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
+- <a href="Version/January2016/Install/System-requirements.md" target="_blank">動作環境</a>  
+- <a href="Version/January2016/Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
 
 #### サポート・その他
 - <a href="http://play-siv3d.hateblo.jp/entry/slack" target="_blank">ユーザーグループ Slack</a>  
