@@ -1,7 +1,7 @@
 ﻿# Siv3D リファレンス | January 2016
 - <a href="http://play-siv3d.hateblo.jp/" target="_blank">Siv3D とは</a>  
-- <a href="What's New/ReleaseNotes.md" target="_blank">Siv3D January 2016 リリースノート</a>  
-- <a href="What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
+- <a href="What's New/January2016/ReleaseNotes.md" target="_blank">Siv3D January 2016 リリースノート</a>  
+- <a href="What's New/January2016/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
 
 #### インストール方法
 - <a href="Install/System-requirements.md" target="_blank">動作環境</a>  
