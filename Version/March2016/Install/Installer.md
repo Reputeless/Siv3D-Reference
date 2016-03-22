@@ -1,6 +1,7 @@
 ﻿# 自動インストール
 ## 1. Siv3D のインストール
-- <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(March2016).zip" target="_blank">Siv3D Package をダウンロード</a> し (※Google Chrome ではダウンロードいただけません)、適当なディレクトリに解凍します（インストール後はフォルダを移動できません）
+- <a href="http://siv3d.jp/downloads/Siv3D/Siv3DPackage(March2016).zip" target="_blank">Siv3D Package をダウンロード</a> し (※Google Chrome ではダウンロードいただけません)、適当なディレクトリに解凍します
+ - インストール後はフォルダを移動できません
 
 - Siv3D_Install.wsf を実行して、数秒待ちます　(<a href="Troubleshooting.md" target="_blank">※実行できない場合</a>) 
 
