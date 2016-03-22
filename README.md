@@ -5,7 +5,7 @@
 
 #### インストール方法
 - <a href="Version/March2016/Install/System-requirements.md" target="_blank">動作環境</a>  
-- <a href="Version/March2016/Install/Manual-setup.md" target="_blank">セットアップ手順</a>  
+- <a href="Version/March2016/Install/Installer.md" target="_blank">セットアップ手順</a>  
 
 #### 前バージョン
 - <a href="Version/January2016/What's New/Features.md" target="_blank">Siv3D January 2016 の新機能サンプル</a>  
