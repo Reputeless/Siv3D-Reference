@@ -13,9 +13,11 @@ Siv3D で開発したアプリケーションを実行するには、次の環�
 - アプリケーションの実行ファイル (.exe)
  - Release ビルドでは最小で 15MB 程度になります。(プログラムや埋め込んだファイルの量に応じて増加します）
  - ターゲットが x86 (32bit) か x64 (64bit) かは <a href="resource/Release/solutionplatform.png" target="_blank">ソリューションプラットフォーム</a> で設定できます
-- ** x86 ビルドの場合は `dll(x86)`, x64 ビルドの場合は `dll(x64)` 以外を削除した Engine フォルダ**
- - dll(x86) / dll(x64) フォルダ以外のファイル (Assets, Fonts, Shaders, Splash.png 等) は自動的に .exe に埋め込まれています
-  - Config.ini は開発者向けのファイルのため、配布しません<br><img src="resource/Release/files.png"><br>
+- `dll` 以外を削除した Engine フォルダ
+ - `dll(x86)` / `dll(x64)` フォルダ以外のファイル (Assets, Fonts, Shaders, Splash.png 等) は自動的に .exe に埋め込まれます
+ - ターゲットが x86 (32bit) の場合 `dll(x64)` は不要です
+ - ターゲットが x64 (64bit) の場合 `dll(x86)` は不要です
+ - Config.ini は開発者向けのファイルのため、配布しません<br><img src="resource/Release/files.png"><br>
 - アプリケーションが使う画像やサウンドなどのファイル（.exe に埋め込んでいなければ）
 - （必要であれば）ユーザーに読んでもらうマニュアルや README などのドキュメント
 
