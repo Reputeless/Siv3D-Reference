@@ -7,7 +7,7 @@
 - Siv3D_Install.wsf を実行して、数秒待ちます　(<a href="Troubleshooting.md" target="_blank">※実行できない場合</a>) 
 
 ![Siv3D のインストール](resource/install.png "Siv3D のインストール")  
-- この画面が表示されたらインストールは完了です。
+- この画面が表示されたらインストールは完了です
  - エラーが発生した場合は <a href="Manual-setup.md">手動でのインストール</a> を試してください
 
 ## 2. プロジェクトの作成
@@ -35,4 +35,4 @@ void Main()
 }
 ```
 おめでとうございます！最初の Siv3D プログラムが動きました。  
-<a href="../../../README.md" target="_blank">トップページ</a> に戻り、チュートリアルに進んでください。
+<a href="../../../README.md" target="_blank">トップページ</a> からチュートリアルに進んでください。
