@@ -1,4 +1,8 @@
 ﻿# Siv3D リファレンス | March 2016
+
+#### お知らせ
+シリアル通信の Serial クラスでリンカエラーが発生する場合は `# pragma comment (lib, "Setupapi")` をソースコードに追加してください。4 月 3 日より、Siv3D March 2016 を修正済みのものに差し替えました。
+
 - <a href="http://play-siv3d.hateblo.jp/" target="_blank">Siv3D とは</a>  
 - <a href="Version/March2016/What's New/Features.md" target="_blank">Siv3D March 2016 の新機能サンプル</a>  
 - <a href="Version/March2016/What's New/ReleaseNotes.md" target="_blank">Siv3D March 2016 リリースノート</a>  
