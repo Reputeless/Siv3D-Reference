@@ -3,42 +3,35 @@
 ```cpp
 # include <Siv3D.hpp>
 
-Image CreateSkyImage()
-{
-	PerlinNoise noise;
-	Image image(640, 960);
-
-	for (auto p : step(image.size))
-		image[p.y][p.x] = HSV(220, 0.9 * noise.octaveNoise0_1(p.x / 160.0, Abs(p.y / 120.0 - 4.0), 8), 0.8);
-
-	return image;
-}
-
 void Main()
 {
 	Window::SetTitle(L"Siv Shooting | [Z]: shot / 十字キー: 移動");
 
-	const Texture texture(CreateSkyImage());
+	const Texture texture(Image(640, 960,[n = PerlinNoise()](auto p)
+	{
+		return HSV(220, 0.9 * n.octaveNoise0_1(p.x / 160.0, Abs(p.y / 120.0 - 4.0), 8), 0.8);
+	}));
+
 	const Font font(20);
 	Array<Vec2> shots, bullets, enemies;
 	Triangle player(300, 200, 20.0);
-	int count = 0, crash = 0, score = 0, highSore = 0;
+	int32 count = 0, crash = 0, score = 0, highSore = 0;
 
 	while (System::Update())
 	{
 		++count;
 
-		const int skyOffset = System::FrameCount() % 960 * 8;
+		const int32 skyOffset = System::FrameCount() % 960 * 8;
 		texture(0, -skyOffset / 2, 640, 480).draw();
 		texture(0, -skyOffset, 640, 480).draw(Alpha(80));
 
 		if (count % (24 - Min(count / 60, 18)) == 0)
 			enemies.emplace_back(Random(40, 600), -40);
 
-		const Vec2 dir(Input::KeyRight.pressed - Input::KeyLeft.pressed, Input::KeyDown.pressed - Input::KeyUp.pressed);
+		Vec2 dir(Input::KeyRight.pressed - Input::KeyLeft.pressed, Input::KeyDown.pressed - Input::KeyUp.pressed);
 
 		if (!dir.isZero())
-			player.moveBy(dir.normalized() * (Input::KeyShift.pressed ? 4.5 : 9.0));
+			player.moveBy(dir.setLength(Input::KeyShift.pressed ? 4.5 : 9.0));
 
 		player.setCentroid(Clamp(player.centroid().x, 0.0, 640.0), Clamp(player.centroid().y, 0.0, 480.0));
 
@@ -93,9 +86,7 @@ void Main()
 		if (crash)
 			Window::ClientRect().draw(Alpha(--crash * 3));
 
-		highSore = Max(score, highSore);
-
-		font(L"Hi:", highSore, L"\n", score).draw(20, 20);
+		font(L"Hi:{}\n{}"_fmt, highSore = Max(score, highSore), score).draw(20, 20);
 	}
 }
 ```
