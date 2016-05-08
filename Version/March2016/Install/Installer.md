@@ -4,7 +4,7 @@
  - Google Chrome ではダウンロードいただけません (※インストーラの相性の問題です)
  - インストール後は解凍したフォルダを移動させないでください
 
-- Siv3D_Install.wsf を実行して、数秒待ちます　(<a href="Troubleshooting.md" target="_blank">※実行できない場合</a>) 
+- Siv3D_Install.wsf を実行して、数秒待ちます　(<a href="Troubleshooting.md" target="_blank">:warning: 実行できない場合</a>) 
 
 ![Siv3D のインストール](resource/install.png "Siv3D のインストール")  
 - この画面が表示されたらインストールは完了です
@@ -15,9 +15,9 @@
 
 - | ▼テンプレート | → | ▼Visual C++ | の一覧にある | Siv3D(March2016) | を選択します
 
--  プロジェクト名を入力して | OK | を押します　(<a href="Troubleshooting.md" target="_blank">※作成に失敗する場合</a>) 
+-  プロジェクト名を入力して | OK | を押します　(<a href="Troubleshooting.md" target="_blank">:warning: 作成に失敗する場合</a>) 
 
-- Main.cpp に以下のコードか用意されているので、ビルド・実行します　(<a href="Troubleshooting.md" target="_blank">※Main.cpp が見つからない、ビルドに失敗する場合</a>) 
+- Main.cpp に以下のコードか用意されているので、ビルド・実行します　(<a href="Troubleshooting.md" target="_blank">:warning: Main.cpp が見つからない、ビルドに失敗する場合</a>) 
 
 ```cpp
 # include <Siv3D.hpp>
@@ -34,5 +34,5 @@ void Main()
 	}
 }
 ```
-おめでとうございます！最初の Siv3D プログラムが動きました。  
+おめでとうございます！最初の Siv3D プログラムが動きました:satisfied:  
 <a href="../../../README.md" target="_blank">トップページ</a> からチュートリアルに進んでください。
