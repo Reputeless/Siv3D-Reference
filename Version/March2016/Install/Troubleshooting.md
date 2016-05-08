@@ -3,7 +3,7 @@
 ### ◆ Siv3D_Install.wsf を実行できない
 Siv3D_Install.wsf を右クリックし、| プログラムから開く | から | Microsoft Windows Based Script Host | を選択するか、コマンドプロンプトから Siv3D_Install.wsf を実行してください。
 
-### ◆ Siv3D_Install.wsf を実行するとエラーが発生する
+### ◆ Siv3D_Install.wsf の実行途中にエラーが発生する
 ダウンロードしたファイルを解凍せずに実行するとエラーが発生します。  
 ダウンロードしたファイルを解凍してください。
 
