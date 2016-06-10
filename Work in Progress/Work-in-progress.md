@@ -6,7 +6,8 @@
  -  
 
 - バグ修正
- - Font 使用時のメモリリークを修正
+ - Font 使用時のメモリリークを修正 (Thanks KICKER)
+ - RenderTarget 切り替え後、最後に使っていた Texture が直後に描画できなかった問題を修正 (Thanks oigami)
 
 - 仕様変更
  -  LineInt::draw() の引数を変更
@@ -15,3 +16,8 @@
  - 
 
 ## Planned for Later
+- フォルダダイアログの改善 (Thanks @aini_bellwood)
+- HTTPClient の改善 (Thanks Tsuzu)
+- Webcam の改善 (Thanks うたまろ)
+- CSVReader の改善 (Thanks papas)
+- 
