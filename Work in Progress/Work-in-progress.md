@@ -8,6 +8,7 @@
 - バグ修正
  - Font 使用時のメモリリークを修正 (Thanks KICKER)
  - RenderTarget 切り替え後、最後に使っていた Texture が直後に描画できなかった問題を修正 (Thanks oigami)
+ - TextWriter::clear() がクラッシュすることがあった問題を修正 (Thanks ポテトサラダ)
 
 - 仕様変更
  -  LineInt::draw() の引数を変更
