@@ -20,4 +20,3 @@
 - HTTPClient の改善 (Thanks Tsuzu)
 - Webcam の改善 (Thanks うたまろ)
 - CSVReader の改善 (Thanks papas)
-- 
