@@ -3,7 +3,7 @@
 ## 基本
 ![基本](resource/LeapMotion/LeapMotion1.gif "基本")  
 コンパイル・実行のために以下の手順が必要です。
-- プロジェクトのプロパティ [VC++ ディレクトリ] で、Leap Motion SDK の include ディレクトリと lib/x64 ディレクトリへのパスを設定する
+- プロジェクトのプロパティ [VC++ ディレクトリ] で、Leap Motion SDK の include ディレクトリと、プロジェクトのターゲットプラットフォームに合わせて lib/x86 または lib/x64 ディレクトリへのパスを設定する
 - 実行ファイルのカレントディレクトリに Leap.dll を配置する
 
 ```cpp
