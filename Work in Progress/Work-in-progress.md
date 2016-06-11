@@ -3,7 +3,7 @@
 ## Siv3D June 2016 
 
 - 新機能
- -  
+ - **日本語と英語の文章の読み上げ機能** 
 
 - バグ修正
  - Font 使用時のメモリリークを修正 (Thanks KICKER)
@@ -14,7 +14,7 @@
  -  LineInt::draw() の引数を変更
  
 - その他
- - 
+ - 内部で使用する Boost のバージョンを 1.59.0 から 1.61.0 に更新
 
 ## Planned for Later
 - フォルダダイアログの改善 (Thanks @aini_bellwood)
