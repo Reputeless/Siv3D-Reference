@@ -4,6 +4,7 @@
 
 - 新機能
  - **日本語と英語の文章の読み上げ機能** 
+ - Serial::readBytes() を追加 (Thanks はむくん)
 
 - バグ修正
  - Font 使用時のメモリリークを修正 (Thanks KICKER)
