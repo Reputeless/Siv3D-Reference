@@ -6,6 +6,7 @@
  - **日本語と英語の文章の読み上げ機能** 
  - Serial::readBytes() を追加 (Thanks はむくん)
  - Quaternion コンストラクタのオーバーロードを追加 (Thanks はむくん)
+ - フォルダダイアログで新規フォルダの作成を可能に (Thanks @aini_bellwood)
 
 - バグ修正
  - Font 使用時のメモリリークを修正 (Thanks KICKER)
@@ -20,7 +21,6 @@
  - 内部で使用する Boost のバージョンを 1.59.0 から 1.61.0 に更新
 
 ## Planned for Later
-- フォルダダイアログの改善 (Thanks @aini_bellwood)
 - HTTPClient の改善 (Thanks Tsuzu)
 - Webcam の改善 (Thanks うたまろ)
 - CSVReader の改善 (Thanks papas)
