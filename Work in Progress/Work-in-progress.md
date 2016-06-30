@@ -13,6 +13,7 @@
  - RenderTarget 切り替え後、最後に使っていた Texture が直後に描画できなかった問題を修正 (Thanks oigami)
  - TextWriter::clear() がクラッシュすることがあった問題を修正 (Thanks ポテトサラダ)
  - ファイルの埋め込みで MP3 ファイルを読み込む際、Engine/dll(xXX)/libmpg123 が無いとクラッシュした不具合を修正 (Thanks @shunEnshuu)
+ - PerlinNoise::octaveNoise0_1(const Vec2&, int32), PerlinNoise::octaveNoise0_1(const Vec3&, int32) の結果が正しくなかったバグを修正
 
 - 仕様変更
  -  LineInt::draw() の引数を変更
