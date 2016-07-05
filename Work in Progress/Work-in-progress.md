@@ -7,6 +7,7 @@
  - Serial::readBytes() を追加 (Thanks はむくん)
  - Quaternion コンストラクタのオーバーロードを追加 (Thanks はむくん)
  - フォルダダイアログで新規フォルダの作成を可能に (Thanks @aini_bellwood)
+ - MeshData 関数で作成できる形状に Capsule を追加 (Thanks bigginer)
 
 - バグ修正
  - Font 使用時のメモリリークを修正 (Thanks KICKER)
