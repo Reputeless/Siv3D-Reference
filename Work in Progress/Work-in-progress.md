@@ -1,9 +1,10 @@
 ﻿# 開発中の機能
 
-## Siv3D July 2016 
+## Siv3D August 2016 
 
 - 新機能
  - **日本語と英語の文章の読み上げ機能** 
+ - **3D 描画時のシャドウに対応**
  - Serial::readBytes() を追加 (Thanks はむくん)
  - Quaternion コンストラクタのオーバーロードを追加 (Thanks はむくん)
  - フォルダダイアログで新規フォルダの作成を可能に (Thanks @aini_bellwood)
