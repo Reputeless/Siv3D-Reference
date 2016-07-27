@@ -19,14 +19,13 @@
  - PerlinNoise::octaveNoise0_1(const Vec2&, int32), PerlinNoise::octaveNoise0_1(const Vec3&, int32) の結果が正しくなかったバグを修正
 
 - 仕様変更
- -  LineInt::draw() の引数を変更
- -  Web カメラの解像度に Size(0, 0) を指定するとデフォルトの解像度を使用するように
- -  Web カメラの解像度のデフォルト引数を Size(0, 0) に変更
- 
+ - LineInt::draw() の引数を変更
+ - Webcam の解像度に Size(0, 0) を指定するとデフォルトの解像度を使用するように
+ - Webcam の解像度のデフォルト引数を Size(0, 0) に変更
+ - Webcam の承認は 1 度だけで済むよう仕様変更 (Thanks うたまろ)
 - その他
  - 内部で使用する Boost のバージョンを 1.59.0 から 1.61.0 に更新
 
 ## Planned for Later
 - HTTPClient の改善 (Thanks Tsuzu)
-- Webcam の改善 (Thanks うたまろ)
 - CSVReader の改善 (Thanks papas)
